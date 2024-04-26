@@ -1,8 +1,18 @@
+import Navbar from './components/Navbar';
+import * as Sentry from '@sentry/react';
 
 const App = () => {
   return (
-  <h1 className="bg-green-400 text-4xl font-bold">Apple World</h1>
+    <main className="bg-black">
+      <Navbar />
+{/*       <Hero />
+      <Highlights />
+      <Model />
+      <Features />
+      <HowItWorks />
+      <Footer /> */}
+    </main>
   )
 }
 
-export default App;
+export default Sentry.withProfiler(App);
