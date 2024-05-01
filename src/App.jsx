@@ -6,6 +6,22 @@ const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
+      <Navbar />
       {/* <Hero /> */}
       {/* <Highlights />
       <Model />

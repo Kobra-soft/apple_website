@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section className="w-full nav-height bg-black relative">
       <div className="h-5/6 w-full flex-center flex-col">
-        <p id="hero" className="hero-title">iPhone 15 Pro</p>
+        <p id="hero" className="hero-title">iPhone 15 Pro Max</p>
         <div className="md:w-10/12 w-9/12">
           <video className="pointer-events-none" autoPlay muted playsInline={true} key={videoSrc}>
             <source src={videoSrc} type="video/mp4" />
@@ -43,7 +43,8 @@ const Hero = () => {
         className="flex flex-col items-center opacity-0 translate-y-20"
       >
         <a href="#highlights" className="btn">Buy</a>
-        <p className="font-normal text-xl">From $199/month or $999</p>
+        {/* <p className="font-normal text-xl">From $199/month or $999</p> */}
+        <p className="font-normal text-xl">From $99/month or $1299</p>
       </div>
     </section>
   )
