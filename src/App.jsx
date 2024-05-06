@@ -1,6 +1,6 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Highlights from './components/Highlights';
+/* import Highlights from './components/Highlights'; */
 import * as Sentry from '@sentry/react';
 
 const App = () => {
