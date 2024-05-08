@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Highlights from './components/Highlights';
+import Model from './components/Model';
 import * as Sentry from '@sentry/react';
 
 const App = () => {
@@ -8,11 +9,10 @@ const App = () => {
     <main className="bg-black">
       <Navbar />
       <Hero />
-      {/* <Highlights /> */}
-      
+      <Highlights />
+      <Model />
 
-      {/* <Model />
-      <Features />
+      {/* <Features />
       <HowItWorks />
       <Footer />  */}
     </main>
