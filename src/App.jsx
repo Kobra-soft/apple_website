@@ -11,10 +11,10 @@ const App = () => {
       <Highlights />
       
 
-      <Model />
+      {/* <Model />
       <Features />
       <HowItWorks />
-      <Footer /> 
+      <Footer />  */}
     </main>
   )
 }
