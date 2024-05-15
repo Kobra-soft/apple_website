@@ -3,18 +3,19 @@ import { navLists } from "../constants";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-[0.82rem] sm:px-[29rem] px-5 flex justify-between items-center">
-      <nav className="flex justify-between">
-        <div className="flex justify-between w-full sm:px-0">
+    <header className="w-full py-[0.82rem] flex justify-center items-center">
+      <nav className="flex justify-center bg-green-400">
+        <div className="flex justify-center w-full"> 
           <img src={appleImg} alt="Apple" width={13} height={13} />
-          <div className="flex justify-start max-sm:hidden mx-5">
+          <div className="flex justify-start max-sm:hidden ml-0 mr-0 bg-red-900">
             {navLists.map((nav, index) => (
               <div
                 key={nav}
-                className={`text-[11.666px] font-light cursor-pointer text-[#cccccc] hover:text-white transition-all-5000
+                className={`sm:hidden md:flex text-[11.666px] font-light cursor-pointer text-[#cccccc]
+                 hover:text-white bg-gray-900
                  ${
                   index < navLists.length - 1
-                    ? "mx-[1.28rem]"
+                    ? "sm:mx-[0.0rem] md:mx-[0.86rem] lg:mx-[1.28rem]"
                     : "pr-[0rem] pl-0"
                 }`}
               >
@@ -26,8 +27,7 @@ const Navbar = () => {
             <img src={searchImg} alt="search" width={13} height={13} />
             <img src={bagImg} alt="bag" width={13} height={13} />
           </div>
-        </div>{" "}
-        {/* End of container */}
+        </div>
       </nav>
     </header>
   );
