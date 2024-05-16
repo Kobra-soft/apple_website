@@ -29,7 +29,7 @@ canvas {
   max-width: 1120px;
 }
 
-.container_screen-max-width {
+/* .container_screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
@@ -38,7 +38,7 @@ canvas {
 
 #apple-svg path {
   fill: #333333 !important;
-}
+} */
 
 @layer utilities {
   .flex-center {
