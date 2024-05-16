@@ -80,8 +80,17 @@ import {
   
   export const footerLinks = [
     "Privacy Policy",
+    "Use of Cookies",
+    "Terms of Use",
+    "Sales and Refunds",
+    "Legal",
+    "Site Map",
+  ];
+
+/*   export const footerLinks = [
+    "Privacy Policy",
     "Terms of Use",
     "Sales Policy",
     "Legal",
     "Site Map",
-  ];
+  ]; */
