@@ -1,5 +1,5 @@
-import React from 'react'
-import { footerLinks } from '../constants'
+import React from "react";
+import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
@@ -7,57 +7,40 @@ const Footer = () => {
       <div className="screen-max-width">
         <div>
           <p className="font-extralight text-[#909091] text-[11.666px]">
-            More ways to shop: {' '}
-            <span className="underline text-blue">
-            find an Apple Store
-            </span>
-            {' '} or {' '}
-            <span className="underline text-blue">
-            other retailer
-            </span>{' '}
-            near you. Or call 0800 048 0408.
+            More ways to shop:{" "}
+            <span className="underline text-blue">find an Apple Store</span> or{" "}
+            <span className="underline text-blue">other retailer</span> near
+            you. Or call 0800 048 0408.
           </p>
         </div>
 
         <div className="bg-[#535355] my-5 h-[1px] w-full" />
 
-{/*         <div className="flex md:flex-row flex-col md:items-center justify-between">
-        <p className="font-extralight text-gray text-[11.666px]">Copyright &copy; 2024 Apple Inc. All rights reserved.</p>
-          <div className="flex">
+        <div className="flex md:flex-row flex-col md:items-center justify-between">
+          <div>
+            <p className="font-extralight text-[#909091] text-[11.666px]">
+              Copyright &copy; 2024 Apple Inc. All rights reserved.
+            </p>
+          </div>
+          <div className="hidden md:flex">
             {footerLinks.map((link, i) => (
               <p key={link} className="font-normal text-[#c7c7c7] text-xs">
-                {link}{' '}
+                {link}{" "}
                 {i !== footerLinks.length - 1 && (
                   <span className="mx-2"> | </span>
                 )}
               </p>
             ))}
-            <p className="font-extralight text-gray text-[11.666px]">United Kingdom</p>
           </div>
-        </div> */}
-
-<div className="flex md:flex-row flex-col md:items-center justify-between">
-  <div>
-    <p className="font-extralight text-[#909091] text-[11.666px]">Copyright &copy; 2024 Apple Inc. All rights reserved.</p>
-  </div>
-  <div className="hidden md:flex">
-    {footerLinks.map((link, i) => (
-      <p key={link} className="font-normal text-[#c7c7c7] text-xs">
-        {link}{' '}
-        {i !== footerLinks.length - 1 && (
-          <span className="mx-2"> | </span>
-        )}
-      </p>
-    ))}
-  </div>
-  <div>
-    <p className="font-extralight text-[#c7c7c7] text-[11.666px]">United Kingdom</p>
-  </div>
-</div>
-
+          <div>
+            <p className="font-extralight text-[#c7c7c7] text-[11.666px]">
+              United Kingdom
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

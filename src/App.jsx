@@ -1,11 +1,11 @@
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Navbar2 from './components/Navbar2';
-import Highlights from './components/Highlights';
-import Model from './components/Model';
-import Footer from './components/Footer';
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Navbar2 from "./components/Navbar2";
+import Highlights from "./components/Highlights";
+import Model from "./components/Model";
+import Footer from "./components/Footer";
 
-import * as Sentry from '@sentry/react';
+import * as Sentry from "@sentry/react";
 
 const App = () => {
   return (
@@ -16,12 +16,12 @@ const App = () => {
       <Highlights />
       <Model />
 
-      <Footer /> 
+      <Footer />
 
       {/* <Features />
-      <HowItWorks /> */} 
+      <HowItWorks /> */}
     </main>
-  )
-}
+  );
+};
 
 export default Sentry.withProfiler(App);

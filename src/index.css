@@ -29,17 +29,6 @@ canvas {
   max-width: 1120px;
 }
 
-/* .container_screen-max-width {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  position: relative;
-  max-width: 720px;
-}
-
-#apple-svg path {
-  fill: #333333 !important;
-} */
-
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center
