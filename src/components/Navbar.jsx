@@ -24,7 +24,7 @@ const Navbar = () => {
             {navLists.map((nav, index) => (
               <div
                 key={nav}
-                className={`sm:hidden md:flex text-[12px] font-light cursor-pointer text-[#cccccc]
+                className={`sm:hidden md:flex text-[11.5px] font-light cursor-pointer text-[#cccccc]
                  hover:text-white
                  ${
                    index < navLists.length - 1
