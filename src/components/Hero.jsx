@@ -30,12 +30,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full nav-height bg-black relative">
-      <div className="h-5/6 w-full flex-center flex-col">
-        <p id="hero" className="hero-title pt-28 font-thin">
+    <section className="w-full py-32 bg-black">
+      <div className="w-full flex-center flex-col">
+        <p id="hero" className="hero-title font-thin mb-[-10px] pt-7">
           iPhone 15 Pro
         </p>
-        <div className="md:w-10/12 w-9/12">
+        <div className="md:w-[62.5%] w-9/12">
           <video
             className="pointer-events-none"
             autoPlay
@@ -50,13 +50,13 @@ const Hero = () => {
 
       <div
         id="cta"
-        className="flex flex-col items-center opacity-0 translate-y-20"
+        className="flex flex-col items-center opacity-0 mt-32"
       >
         <a href="#highlights" className="btn">
           Buy
         </a>
         {/* <p className="font-normal text-xl">From $199/month or $999</p> */}
-        <p className="font-normal text-xl">From £41.62/mo. or £999</p>
+        <p className="font-normal text-[21px] mt-2 tracking-wide">From £41.62/mo. or £999</p>
       </div>
     </section>
   );

@@ -39,7 +39,7 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
+    @apply px-5 py-2 rounded-3xl bg-[#0071e3] my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
   }
 
   .color-container {
@@ -87,7 +87,7 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-normal text-3xl text-[#beb8ae] opacity-0 max-md:mb-10
+    @apply text-center font-normal text-[29px] text-[#beb8ae] opacity-0 max-md:mb-10
   }
 
   .hiw-title {
