@@ -3,7 +3,7 @@ import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="py-5 sm:px-10 px-5 bg-[#1d1d1f]">
+    <footer className="py-5 sm:px-10 px-4 bg-[#1d1d1f]">
       <div className="screen-max-width">
         <div>
           <p className="font-extralight text-[#909091] text-[11.666px]">
@@ -14,26 +14,39 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="bg-[#535355] my-5 h-[1px] w-full" />
+        <div className="bg-[#535355] mt-5 mb-5 h-[1px] w-full hidden md:flex" />
 
-        <div className="flex md:flex-row flex-col md:items-center justify-between">
+        <div className="flex flex-wrap md:flex-nowrap md:items-center justify-between">
           <div>
+            <p
+              className="font-extralight text-[#c7c7c7] text-[11.666px] mb-4 mt-4 sm:mt-0
+            flex md:hidden "
+            >
+              United Kingdom
+            </p>
             <p className="font-extralight text-[#909091] text-[11.666px]">
               Copyright &copy; 2024 Apple Inc. All rights reserved.
             </p>
           </div>
-          <div className="hidden md:flex">
+          <div className="flex flex-wrap">
             {footerLinks.map((link, i) => (
-              <p key={link} className="font-normal text-[#c7c7c7] text-xs">
+              <p
+                key={link}
+                className="font-normal text-[#c7c7c7] text-[11.666px]
+              leading-4 mt-1.5 sm:mt-0"
+              >
                 {link}{" "}
                 {i !== footerLinks.length - 1 && (
-                  <span className="mx-2"> | </span>
+                  <span className="mx-2 font-thin text-[#868686]"> | </span>
                 )}
               </p>
             ))}
           </div>
           <div>
-            <p className="font-extralight text-[#c7c7c7] text-[11.666px]">
+            <p
+              className="font-extralight text-[#c7c7c7] text-[11.666px] mt-2 sm:mt-0
+            hidden md:flex"
+            >
               United Kingdom
             </p>
           </div>
