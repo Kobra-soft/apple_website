@@ -9,9 +9,14 @@ const Footer = () => {
         <div>
           <p className="font-extralight text-[#909091] text-[11.666px]">
             More ways to shop:{" "}
-            <span className="underline text-blue cursor-pointer">find an Apple Store</span> or{" "}
-            <span className="underline text-blue cursor-pointer">other retailer</span> near
-            you. Or call 0800 048 0408.
+            <span className="underline text-blue cursor-pointer">
+              find an Apple Store
+            </span>{" "}
+            or{" "}
+            <span className="underline text-blue cursor-pointer">
+              other retailer
+            </span>{" "}
+            near you. Or call 0800 048 0408.
           </p>
         </div>
 
@@ -29,7 +34,7 @@ const Footer = () => {
               Copyright &copy; 2024 Apple Inc. All rights reserved.
             </p>
           </div>
-          {/* <div className="flex flex-wrap">
+          <div className="flex flex-wrap">
             {footerLinks.map((link, i) => (
               <p
                 key={link}
@@ -42,8 +47,8 @@ const Footer = () => {
                 )}
               </p>
             ))}
-          </div> */}
-          <div className="flex flex-wrap cursor-pointer">
+          </div>
+          {/*           <div className="flex flex-wrap cursor-pointer">
             {navSubLinks_Search.map((link, i) => (
               <p
                 key={link}
@@ -56,7 +61,7 @@ const Footer = () => {
                 )}
               </p>
             ))}
-          </div>
+          </div> */}
           <div>
             <p
               className="font-extralight text-[#c7c7c7] text-[11.666px] mt-2 sm:mt-0
