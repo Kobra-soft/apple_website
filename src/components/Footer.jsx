@@ -1,5 +1,6 @@
 import React from "react";
 import { footerLinks } from "../constants";
+import { navSubLinks_Search } from "../constants";
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
         <div>
           <p className="font-extralight text-[#909091] text-[11.666px]">
             More ways to shop:{" "}
-            <span className="underline text-blue">find an Apple Store</span> or{" "}
-            <span className="underline text-blue">other retailer</span> near
+            <span className="underline text-blue cursor-pointer">find an Apple Store</span> or{" "}
+            <span className="underline text-blue cursor-pointer">other retailer</span> near
             you. Or call 0800 048 0408.
           </p>
         </div>
@@ -28,7 +29,7 @@ const Footer = () => {
               Copyright &copy; 2024 Apple Inc. All rights reserved.
             </p>
           </div>
-          <div className="flex flex-wrap">
+          {/* <div className="flex flex-wrap">
             {footerLinks.map((link, i) => (
               <p
                 key={link}
@@ -37,6 +38,20 @@ const Footer = () => {
               >
                 {link}{" "}
                 {i !== footerLinks.length - 1 && (
+                  <span className="mx-2 font-thin text-[#868686]"> | </span>
+                )}
+              </p>
+            ))}
+          </div> */}
+          <div className="flex flex-wrap cursor-pointer">
+            {navSubLinks_Search.map((link, i) => (
+              <p
+                key={link}
+                className="font-normal text-[#c7c7c7] text-[11.666px]
+              leading-4 mt-1.5 sm:mt-0 hover:underline"
+              >
+                {link}{" "}
+                {i !== navSubLinks_Search.length - 1 && (
                   <span className="mx-2 font-thin text-[#868686]"> | </span>
                 )}
               </p>

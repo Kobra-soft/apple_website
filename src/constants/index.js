@@ -99,6 +99,31 @@ export const footerLinks = [
   "Site Map",
 ];
 
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+
+// 2
+// 
+// Search
+//
+// Quick Links
+//
+// Find a Store
+// Accessories
+// AirPods
+// AirTag
+// Apple Trade In
+
+export const navSubLinks_Search = [
+  "Quick Links",
+  "Find a Store",
+  "Accessories",
+  "AirPods",
+  "AirTag",
+  "Apple Trade In",
+];
+
 // 2
 // 
 // Search

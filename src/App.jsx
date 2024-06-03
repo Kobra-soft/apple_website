@@ -15,7 +15,6 @@ const App = () => {
       <Hero />
       <Highlights />
       <Model />
-
       <Footer />
 
       {/* <Features />
