@@ -102,6 +102,11 @@ export const footerLinks = [
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+export const dropdownLists = [
+  { name: 'Item 1', link: '/item1' },
+  { name: 'Item 2', link: '/item2' },
+  // add more items as needed
+];
 
 // 2
 // 
@@ -124,18 +129,6 @@ export const navSubLinks_Search = [
   "Apple Trade In",
 ];
 
-// 2
-// 
-// Search
-//
-// Quick Links
-//
-// Find a Store
-// Accessories
-// AirPods
-// AirTag
-// Apple Trade In
-
 // 3
 //
 // Your Bag is empty.
@@ -148,6 +141,14 @@ export const navSubLinks_Search = [
 // Your Saves
 // Account
 // Sign in
+
+export const navSubLinks_Bag = [
+  "My Profile",
+  "Orders",
+  "Your Saves",
+  "Account",
+  "Sign in",
+]
 
 // 4
 //

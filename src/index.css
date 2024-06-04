@@ -121,4 +121,37 @@ canvas {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
   }
+
+  /* DROP DOWN NAV MENU */
+  .navbar {
+    /* add styles for the navbar */
+  }
+  
+  .bg-original {
+    background-color: #ff0000; /* red */
+  }
+  
+  .bg-dropdown {
+    background-color: #00ff00; /* green */
+  }
+  
+  .dropdown-menu-overlay {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    background-color: rgba(255, 0, 0, 0.5); /* semi-transparent red background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    display: block;
+    /* add more styles as needed */
+  }
 }

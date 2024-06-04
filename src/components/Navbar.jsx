@@ -1,7 +1,12 @@
+import React, { useState } from "react";
 import { bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
+import NavbarSubMenu from "./NavbarSubMenu";
 
 const Navbar = () => {
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [navbarHeight, setNavbarHeight] = useState(0);
+
   return (
     <header className="w-full py-[0.82rem] flex justify-center items-center">
       <nav className="flex justify-between w-full px-4 md:px-0">
@@ -35,8 +40,11 @@ const Navbar = () => {
                      ? "md:pr-[2.0rem] lg:pr-[2.51rem] "
                      : "pr-[0rem] pl-0"
                  }`}
+                onMouseEnter={() => setDropdownVisible(true)}
+                onMouseLeave={() => setDropdownVisible(false)}
               >
                 {nav}
+                {isDropdownVisible && <NavbarSubMenu />}
               </div>
             ))}
           </div>
