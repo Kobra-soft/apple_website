@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
 import NavbarSubMenu from "./NavbarSubMenu";
@@ -6,9 +6,29 @@ import NavbarSubMenu from "./NavbarSubMenu";
 const Navbar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [navbarHeight, setNavbarHeight] = useState(0);
+  const navbarRef = useRef(null);
+  let timer = useRef(null);
+
+  useEffect(() => {
+    setNavbarHeight(navbarRef.current.offsetHeight);
+  }, []);
+
+  const handleMouseEnter = () => {
+    clearTimeout(timer.current);
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    timer.current = setTimeout(() => {
+      setDropdownVisible(false);
+    }, 300); // 300ms delay before hiding the submenu
+  };
 
   return (
-    <header className="w-full py-[0.82rem] flex justify-center items-center">
+    <header
+      ref={navbarRef}
+      className="w-full py-[0.82rem] flex justify-center items-center"
+    >
       <nav className="flex justify-between w-full px-4 md:px-0">
         {/* // This is the DIV for the SVG's [Apple, Search, Bag] for larger screens */}
         {/* // FOR MEDIUM+ > Screen sizes! else HIDDEN */}
@@ -30,24 +50,33 @@ const Navbar = () => {
 
           {/* // This is the DIV for the NAV-LIST [MIDDLE - Medium+ OR! HIDDEN SM]*/}
           <div className="flex justify-start ml-0 mr-0 pl-[40px]">
-            {navLists.map((nav, index) => (
+        {navLists.map((nav, index) => (
+          <div
+            key={nav}
+            className={`text-[11.666px] font-light cursor-pointer text-[#a6a6a6]
+             hover:text-[#E7E7E7]
+             ${
+               index < navLists.length - 1
+                 ? "md:pr-[2.0rem] lg:pr-[2.51rem] "
+                 : "pr-[0rem] pl-0"
+             }`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {nav}
+            {isDropdownVisible && (
               <div
-                key={nav}
-                className={`text-[11.666px] font-light cursor-pointer text-[#a6a6a6]
-                 hover:text-[#E7E7E7]
-                 ${
-                   index < navLists.length - 1
-                     ? "md:pr-[2.0rem] lg:pr-[2.51rem] "
-                     : "pr-[0rem] pl-0"
-                 }`}
-                onMouseEnter={() => setDropdownVisible(true)}
-                onMouseLeave={() => setDropdownVisible(false)}
+                className={`dropdown-menu ${isDropdownVisible ? 'visible' : 'hidden'}`}
+                style={{ top: navbarHeight }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
-                {nav}
-                {isDropdownVisible && <NavbarSubMenu />}
+                <NavbarSubMenu />
               </div>
-            ))}
+            )}
           </div>
+        ))}
+      </div>
 
           {/* // This is the DIV for the SVG's [Search & Bag] */}
           <div className="flex ml-0 pl-0 gap-0">

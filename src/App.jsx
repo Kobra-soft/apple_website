@@ -11,7 +11,7 @@ const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
-      <Navbar2 />
+      {/* <Navbar2 /> */}
       <Hero />
       <Highlights />
       <Model />
