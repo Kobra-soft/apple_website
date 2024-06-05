@@ -10,7 +10,7 @@ const Navbar = () => {
   let timer = useRef(null);
 
   useEffect(() => {
-    setNavbarHeight(navbarRef.current.offsetHeight);
+    setNavbarHeight(navbarRef.current.getBoundingClientRect().height);
   }, []);
 
   const handleMouseEnter = () => {
@@ -27,7 +27,8 @@ const Navbar = () => {
   return (
     <header
       ref={navbarRef}
-      className="w-full py-[0.82rem] flex justify-center items-center"
+      className="w-full py-[0.82rem] flex justify-center items-center
+      hover:bg-[#161616] transition-colors duration-200"
     >
       <nav className="flex justify-between w-full px-4 md:px-0">
         {/* // This is the DIV for the SVG's [Apple, Search, Bag] for larger screens */}
@@ -48,32 +49,22 @@ const Navbar = () => {
             />
           </svg>
 
-          {/* // This is the DIV for the NAV-LIST [MIDDLE - Medium+ OR! HIDDEN SM]*/}
           <div className="flex justify-start ml-0 mr-0 pl-[40px]">
         {navLists.map((nav, index) => (
           <div
             key={nav}
-            className={`text-[11.666px] font-light cursor-pointer text-[#a6a6a6]
+            className={`nav-item text-[11.666px] font-light cursor-pointer text-[#a6a6a6]
              hover:text-[#E7E7E7]
              ${
                index < navLists.length - 1
                  ? "md:pr-[2.0rem] lg:pr-[2.51rem] "
                  : "pr-[0rem] pl-0"
              }`}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
           >
             {nav}
-            {isDropdownVisible && (
-              <div
-                className={`dropdown-menu ${isDropdownVisible ? 'visible' : 'hidden'}`}
-                style={{ top: navbarHeight }}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                <NavbarSubMenu />
-              </div>
-            )}
+            <div className="dropdown-menu" style={{ top: `${navbarHeight}px` }}>
+              <NavbarSubMenu />
+            </div>
           </div>
         ))}
       </div>

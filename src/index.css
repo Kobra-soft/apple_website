@@ -123,34 +123,26 @@ canvas {
   }
 
   /* DROP DOWN NAV MENU */
-  .navbar {
-    /* add styles for the navbar */
-  }
-  
-/*   .bg-original {
-    background-color: #ff0000; 
-  }
-  
-  .bg-dropdown {
-    background-color: #00ff00; 
-   */
 
-  .dropdown-menu-overlay {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 33%;
-    background-color: #161616; /* semi-transparent red background */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    display: block;
-    /* add more styles as needed */
-  }
+.nav-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300px;
+  display: none;
+  background-color: #161616;
+  z-index: 1000;
+  overflow: auto;
+  transition: all 0.2s;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
 }
