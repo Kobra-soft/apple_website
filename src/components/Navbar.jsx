@@ -33,7 +33,9 @@ const Navbar = () => {
       <nav className="flex justify-between w-full px-4 md:px-0">
         {/* // This is the DIV for the SVG's [Apple, Search, Bag] for larger screens */}
         {/* // FOR MEDIUM+ > Screen sizes! else HIDDEN */}
+        
         <div className="md:flex hidden justify-center w-full">
+          
           {/* // This is the Apple logo [TOP-LEFT] */}
           <svg
             className="text-[#cccccc] fill-current"

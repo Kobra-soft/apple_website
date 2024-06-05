@@ -1,10 +1,10 @@
 import React from 'react';
-import { dropdownLists } from "../constants";
+import { dropdownLists, navSubLinks_Search } from "../constants";
 
 const NavbarSubMenu = ({ style }) => {
   return (
     <div className="dropdown-menu-overlay" style={style}>
-      {dropdownLists.map((item) => (
+      {navSubLinks_Search.map((item) => (
         <a href={item.link} key={item.name}>{item.name}</a>
       ))}
     </div>

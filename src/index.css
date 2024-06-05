@@ -124,21 +124,37 @@ canvas {
 
   /* DROP DOWN NAV MENU */
 
+.navbar-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.apple-logo {
+  order: 1;
+}
+
 .nav-item {
+  order: 2;
   position: relative;
 }
 
 .dropdown-menu {
-  position: fixed;
-  top: 0;
+  position: fixed; 
+  top: 100%;
   left: 0;
-  width: 100vw;
-  height: 300px;
+  width: 100vw; 
+  height: 300px; 
   display: none;
   background-color: #161616;
   z-index: 1000;
   overflow: auto;
-  transition: all 0.2s;
+}
+
+.dropdown-content {
+  width: 90%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px;
 }
 
 .nav-item:hover .dropdown-menu {
