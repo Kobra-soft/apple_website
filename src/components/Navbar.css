@@ -1,24 +1,42 @@
-/* CSS for both 
-Navbar.tsx &&& 
-NavbarSubMenu.tsx */
+.navbar-container {
+  position: relative;
+}
+
+.navbar-container:hover {
+  background-color: #161616;
+}
 
 .navbar-item {
-    position: relative;
-  }
+  position: relative;
+  padding: 10px 20px;
+}
 
-  .navbar-items {
-    display: flex;
-    gap: 2.65rem;
-    justify-content: center;
-    font-weight: 300;
-  }
-  
-  .navbar-submenu {
-    display: none;
-    position: absolute;
-    background-color: #161616;
-  }
-  
-  .navbar-item:hover .navbar-submenu {
-    display: block;
-  }
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.submenu-container {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #161616;
+  top: 100%;
+  left: 0;
+  display: none; /* Hide by default */
+}
+
+.navbar-container:hover .submenu-container,
+body.navbar-hovered .submenu-container {
+  display: block; /* Show when navbar is hovered */
+}
+
+.navbar-submenu {
+  position: relative;
+  padding-left: 10px;
+  height: auto;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+}
