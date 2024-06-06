@@ -17,7 +17,7 @@ const Navbar = () => {
     }
   }, [isHovered]);
   return (
-    <div className="navbar-container bg-red-400">
+    <div className="navbar-container">
       <header className={`navbar ${isHovered ? "navbar-hovered" : ""}`}>
         <nav className="navbar-navigation">
           <div className="navbar-logo">
