@@ -15,12 +15,12 @@ export const navLists = [
   "iPad",
   "iPhone",
   "Watch",
+  "Vision",
   "AirPods",
   "TV & Home",
   "Entertainment",
   "Accessories",
   "Support",
-  "",
 ];
 
 export const hightlightsSlides = [
@@ -103,8 +103,6 @@ export const footerLinks = [
 ///////////////////////////////////////////
 
 export const dropdownLists = [
-/*   { name: 'Item 1', link: '/item1' },
-  { name: 'Item 2', link: '/item2' },
   { name: 'Item 1', link: '/item1' },
   { name: 'Item 2', link: '/item2' },
   { name: 'Item 1', link: '/item1' },
@@ -112,7 +110,9 @@ export const dropdownLists = [
   { name: 'Item 1', link: '/item1' },
   { name: 'Item 2', link: '/item2' },
   { name: 'Item 1', link: '/item1' },
-  { name: 'Item 2', link: '/item2' }, */
+  { name: 'Item 2', link: '/item2' },
+  { name: 'Item 1', link: '/item1' },
+  { name: 'Item 2', link: '/item2' },
   
   // add more items as needed
 ];
@@ -130,12 +130,6 @@ export const dropdownLists = [
 // Apple Trade In
 
 export const navSubLinks_Search = [
-  /* "Quick Links",
-  "Find a Store",
-  "Accessories",
-  "AirPods",
-  "AirTag",
-  "Apple Trade In", */
   { name: 'Quick Links', link: '/item1' },
   { name: 'Find a Store', link: '/item2' },
   { name: 'Accessories', link: '/item1' },

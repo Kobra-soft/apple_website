@@ -1,0 +1,24 @@
+/* CSS for both 
+Navbar.tsx &&& 
+NavbarSubMenu.tsx */
+
+.navbar-item {
+    position: relative;
+  }
+
+  .navbar-items {
+    display: flex;
+    gap: 2.65rem;
+    justify-content: center;
+    font-weight: 300;
+  }
+  
+  .navbar-submenu {
+    display: none;
+    position: absolute;
+    background-color: #161616;
+  }
+  
+  .navbar-item:hover .navbar-submenu {
+    display: block;
+  }
