@@ -11,16 +11,5 @@ const NavbarSubMenu = ({ items }) => {
   );
 };
 
-/* const NavbarSubMenu = () => {
-  return (
-    <div className="navbar-submenu">
-      {dropdownLists.map((item, index) => (
-        <div key={index} className="navbar-submenu-item">
-          {item}
-        </div>
-      ))}
-    </div>
-  );
-}; */
 
 export default NavbarSubMenu;
