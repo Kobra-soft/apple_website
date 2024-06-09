@@ -9,20 +9,6 @@ import {
   yellowImg,
 } from "../utils";
 
-export const navLists = [
-  "Store",
-  "Mac",
-  "iPad",
-  "iPhone",
-  "Watch",
-  "Vision",
-  "AirPods",
-  "TV & Home",
-  "Entertainment",
-  "Accessories",
-  "Support",
-];
-
 export const hightlightsSlides = [
   {
     id: 1,
@@ -115,6 +101,34 @@ export const dropdownLists = [
   { name: 'Item 2', link: '/item2' },
   
   // add more items as needed
+];
+
+/* export const navLists = [
+  "Store",
+  "Mac",
+  "iPad",
+  "iPhone",
+  "Watch",
+  "Vision",
+  "AirPods",
+  "TV & Home",
+  "Entertainment",
+  "Accessories",
+  "Support",
+]; */
+
+export const navLists = [
+  { name: "Store", submenu: ["Quick Links", "Find a Store", "Accessories",  "AirPods", "AirTag", "Apple Trade In"] },
+  { name: "Mac", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "iPad", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "iPhone", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "Watch", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "Vision", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "AirPods", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "TV & Home", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "Entertainment", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "Accessories", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "Support", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
 ];
 
 // 2

@@ -3,44 +3,61 @@ import { bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
 import "./Navbar.css";
 import NavbarSubMenu from "./NavbarSubMenu";
+import Navbar2 from "./Navbar2"; // Import Navbar2
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false); // New state
   const firstNavItemRef = useRef(null);
+  const [hoveredItem, setHoveredItem] = useState(null);
 
   useEffect(() => {
     if (isHovered) {
       const firstNavItem = firstNavItemRef.current;
       const firstNavItemRect = firstNavItem.getBoundingClientRect();
-      const submenu = document.querySelector('.navbar-submenu');
+      const submenu = document.querySelector(".navbar-submenu");
       submenu.style.left = `${firstNavItemRect.left}px`;
     }
   }, [isHovered]);
 
   return (
-    <div 
-      className="navbar-container" 
-      onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)}
+    <div
+      className="navbar-container"
+      onMouseEnter={() => {
+        setIsHovered(true);
+        setIsSubmenuOpen(true); // Set isSubmenuOpen to true
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        setIsSubmenuOpen(false); // Set isSubmenuOpen to false
+      }}
     >
       <header className={`navbar ${isHovered ? "navbar-hovered" : ""}`}>
         <nav className="navbar-navigation">
           <div className="navbar-logo">
             {/* Insert your SVG for the Apple logo here */}
           </div>
-  
+
           <div className="navbar-items text-[11.666px]">
             {navLists.map((nav, index) => (
-              <div
+              /*  <div
                 className="navbar-item text-[#a6a6a6] hover:text-[#E7E7E7] cursor-pointer"
                 key={nav}
                 ref={index === 0 ? firstNavItemRef : null}
               >
                 {nav}
+              </div> */
+              <div
+                className="navbar-item text-[#a6a6a6] hover:text-[#E7E7E7] cursor-pointer"
+                key={nav.name}
+                ref={index === 0 ? firstNavItemRef : null}
+                onMouseEnter={() => setHoveredItem(nav)}
+              >
+                {nav.name}
               </div>
             ))}
           </div>
-  
+
           <div className="navbar-icons">
             {/* Insert your SVGs for the Search and Bag icons here */}
           </div>
@@ -49,13 +66,14 @@ const Navbar = () => {
       <div className="submenu-container">
         {isHovered && (
           <div className="navbar-submenu">
-            {/* Insert your NavbarSubMenu component here */}
-            <NavbarSubMenu />
+            <NavbarSubMenu items={hoveredItem ? hoveredItem.submenu : []} />
           </div>
         )}
       </div>
+      <Navbar2 isSubmenuOpen={isSubmenuOpen} />{" "}
+      {/* Conditionally render Navbar2 */}
     </div>
   );
-}
+};
 
 export default Navbar;

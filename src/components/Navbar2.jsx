@@ -1,9 +1,6 @@
-import { appleImg, bagImg, searchImg } from "../utils";
-import { navLists } from "../constants";
-
-const Navbar2 = () => {
+const Navbar2 = ({ isSubmenuOpen }) => {
   return (
-    <header className="bg-[#1d1d1f] w-full py-5 sm:px-10 px-5">
+    <header className={`bg-[#1d1d1f] w-full py-5 sm:px-10 px-5 ${isSubmenuOpen ? 'navbar2-hidden' : ''}`}>
       <nav className="w-full screen-max-width">
         <div className="row-auto justify-center bg-[#1d1d1f]">
           <div className="py-0 text-[11.666px] sm:text-[13.666px] lg:text-[17px] font-extralight text-[#f5f5f7]
