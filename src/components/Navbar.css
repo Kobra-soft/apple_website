@@ -21,15 +21,21 @@
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 300px;
   background-color: #161616;
   left: 0;
-  display: none; /* Hide by default */
+  display: none;
+  padding-bottom: 40px;
 }
 
 .navbar-container:hover .submenu-container {
   display: block; /* Show when navbar is hovered */
 }
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/assets/fonts/SF-Pro-Text-Regular.otf');
+}
+
 
 .navbar-submenu {
   position: relative;
@@ -39,7 +45,17 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  top: -2rem;
+  top: -0.9rem;
+
+  font-weight: 400;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 1.45rem;
+  color: #E8E8ED;
+  line-height: 1.68;
+}
+
+.navbar-submenu a:hover {
+  color: #ffffff;
 }
 
 .navbar2-hidden {

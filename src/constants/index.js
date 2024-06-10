@@ -117,19 +117,20 @@ export const dropdownLists = [
   "Support",
 ]; */
 
+
 export const navLists = [
-  { name: "Store", submenu: ["Quick Links", "Find a Store", "Accessories",  "AirPods", "AirTag", "Apple Trade In"] },
-  { name: "Mac", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "iPad", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "iPhone", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "Watch", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "Vision", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "AirPods", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "TV & Home", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "Entertainment", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "Accessories", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
-  { name: "Support", submenu: ["Submenu 1", "Submenu 2", "Submenu 3"] },
+  { name: "Store", submenu: ["Shop the Latest", "Mac", "iPad", "iPhone", "Apple Watch", "Accessories"] },
+  { name: "Mac", submenu: ["Explore All Mac", "MacBook Air", "MacBook Pro", "iMac", "Mac mini", "Mac Studio", "Mac Pro", "Displays" ] },
+  { name: "iPad", submenu: ["Explore All iPad", "iPad Pro", "iPad Air", "iPad", "iPad mini", "Apple Pencil", "Keyboards"] },
+  { name: "iPhone", submenu: ["Explore All iPhone", "iPhone 15 Pro", "iPhone 15", "iPhone 14", "iPhone 13", "iPhone SE"] },
+  { name: "Watch", submenu: ["Explore All Apple Watch", "Apple Watch Series 9", "Apple Watch Ultra 2", "Apple Watch SE", "Apple Watch Nike", "Apple Watch Hermès"] },
+  { name: "AirPods", submenu: ["Explore All AirPods", "AirPods Pro (2nd generation)", "AirPods (2nd generation)", "AirPods (3rd generation)", "AirPods Max",] },
+  { name: "TV & Home", submenu: ["Explore TV & Home", "Apple TV 4K", "HomePod", "HomePod mini",] },
+  { name: "Entertainment", submenu: ["Explore Entertainment", "Apple One", "Apple TV+", "Apple Music", "Apple Arcade", "Apple Fitness+", "Apple News+", "Apple Podcasts", "Apple Books", "App Store"] },
+  { name: "Accessories", submenu: ["Shop All Accessories", "Mac", "iPad", "iPhone", "Apple Watch", "Apple Vision Pro", "AirPods", "TV & Home"] },
+  { name: "Support", submenu: ["iPhone", "Mac", "iPad", "Watch", "AirPods", "Music", "TV"] },
 ];
+
 
 // 2
 // 
@@ -194,6 +195,7 @@ export const navSubLinks_Bag = [
 // iPhone
 // Apple Watch
 // Accessories
+
 // Quick Links
 // Find a Store
 // Order Status
@@ -307,8 +309,7 @@ export const navSubLinks_Bag = [
 // 4f
 // 
 // Explore All AirPods
-// AirPods Pro (2nd
-// generation)
+// AirPods Pro (2nd generation)
 // AirPods (2nd generation)
 // AirPods (3rd generation)
 // AirPods Max
@@ -367,6 +368,7 @@ export const navSubLinks_Bag = [
 // iPad
 // iPhone
 // Apple Watch
+// Apple Vision Pro
 // AirPods
 // TV & Home
 // Explore Accessories

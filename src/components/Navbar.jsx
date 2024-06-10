@@ -36,7 +36,9 @@ const Navbar = () => {
         <nav className="navbar-navigation">
           <div className="navbar-logo">
             {/* Insert your SVG for the Apple logo here */}
+            
           </div>
+          
 
           <div className="navbar-items text-[11.666px]">
             {navLists.map((nav, index) => (
