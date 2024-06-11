@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
           
 
-          <div className="navbar-items text-[11.666px]">
+          <div className="navbar-items">
             {navLists.map((nav, index) => (
               /*  <div
                 className="navbar-item text-[#a6a6a6] hover:text-[#E7E7E7] cursor-pointer"
@@ -49,7 +49,7 @@ const Navbar = () => {
                 {nav}
               </div> */
               <div
-                className="navbar-item hidden md:flex lg:flex text-[#a6a6a6] hover:text-[#E7E7E7] cursor-pointer"
+                className="navbar-item hidden md:flex lg:flex text-[#a6a6a6] hover:text-[#E7E7E7]"
                 key={nav.name}
                 ref={index === 0 ? firstNavItemRef : null}
                 onMouseEnter={() => setHoveredItem(nav)}
