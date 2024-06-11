@@ -124,6 +124,7 @@ export const navLists = [
   { name: "iPad", submenu: ["Explore All iPad", "iPad Pro", "iPad Air", "iPad", "iPad mini", "Apple Pencil", "Keyboards"] },
   { name: "iPhone", submenu: ["Explore All iPhone", "iPhone 15 Pro", "iPhone 15", "iPhone 14", "iPhone 13", "iPhone SE"] },
   { name: "Watch", submenu: ["Explore All Apple Watch", "Apple Watch Series 9", "Apple Watch Ultra 2", "Apple Watch SE", "Apple Watch Nike", "Apple Watch Hermès"] },
+  { name: "Vision", submenu: ["Explore All Apple Vision Pro"] },
   { name: "AirPods", submenu: ["Explore All AirPods", "AirPods Pro (2nd generation)", "AirPods (2nd generation)", "AirPods (3rd generation)", "AirPods Max",] },
   { name: "TV & Home", submenu: ["Explore TV & Home", "Apple TV 4K", "HomePod", "HomePod mini",] },
   { name: "Entertainment", submenu: ["Explore Entertainment", "Apple One", "Apple TV+", "Apple Music", "Apple Arcade", "Apple Fitness+", "Apple News+", "Apple Podcasts", "Apple Books", "App Store"] },

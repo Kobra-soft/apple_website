@@ -9,6 +9,11 @@
 .navbar-item {
   position: relative;
   padding: 10px 20px;
+  /* background-color: #ff2a2a; */
+  font-weight: 400;
+  font-family: 'SF Pro Text UT', sans-serif;
+  /* font-family: 'SF Pro Text', sans-serif; */
+  font-size: 0.7rem;
 }
 
 .navbar-items {
@@ -32,10 +37,14 @@
 }
 
 @font-face {
+  font-family: 'SF Pro Text UT';
+  src: url('/assets/fonts/SF-Pro-Text-Ultralight.otf');
+}
+
+@font-face {
   font-family: 'SF Pro Text';
   src: url('/assets/fonts/SF-Pro-Text-Regular.otf');
 }
-
 
 .navbar-submenu {
   position: relative;
@@ -46,7 +55,6 @@
   flex-direction: column;
   cursor: pointer;
   top: -0.9rem;
-
   font-weight: 400;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 1.45rem;

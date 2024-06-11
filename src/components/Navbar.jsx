@@ -25,18 +25,17 @@ const Navbar = () => {
       className="navbar-container"
       onMouseEnter={() => {
         setIsHovered(true);
-        setIsSubmenuOpen(true); // Set isSubmenuOpen to true
+        setIsSubmenuOpen(true);
       }}
       onMouseLeave={() => {
         setIsHovered(false);
-        setIsSubmenuOpen(false); // Set isSubmenuOpen to false
+        setIsSubmenuOpen(false);
       }}
     >
       <header className={`navbar ${isHovered ? "navbar-hovered" : ""}`}>
         <nav className="navbar-navigation">
           <div className="navbar-logo">
-            {/* Insert your SVG for the Apple logo here */}
-            
+            {/* Insert SVG for Apple logo */}
           </div>
           
 
@@ -50,7 +49,7 @@ const Navbar = () => {
                 {nav}
               </div> */
               <div
-                className="navbar-item text-[#a6a6a6] hover:text-[#E7E7E7] cursor-pointer"
+                className="navbar-item hidden md:flex lg:flex text-[#a6a6a6] hover:text-[#E7E7E7] cursor-pointer"
                 key={nav.name}
                 ref={index === 0 ? firstNavItemRef : null}
                 onMouseEnter={() => setHoveredItem(nav)}
@@ -61,7 +60,7 @@ const Navbar = () => {
           </div>
 
           <div className="navbar-icons">
-            {/* Insert your SVGs for the Search and Bag icons here */}
+            {/* Insert SVGs */}
           </div>
         </nav>
       </header>
