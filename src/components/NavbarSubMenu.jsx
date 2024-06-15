@@ -16,14 +16,64 @@ export default NavbarSubMenu; */
 
 import React from 'react';
 
-const NavbarSubMenu = ({ items }) => {
+/* const NavbarSubMenu = ({ items }) => {
+  return (
+    <div className="navbar-submenu bg-red-400">
+      {items.map((item, index) => (
+        <a className='' href="#" key={index}>{item}</a>
+      ))}
+    </div>
+  );
+}; */
+
+/* const NavbarSubMenu = ({ items }) => {
+  return (
+    <div className="navbar-submenu bg-red-400">
+      {items.map((item, index) => (
+        <a className='' href="#" key={index}>{item}</a>
+      ))}
+    </div>
+  );
+}; */
+
+/* const NavbarSubMenu = ({ items, submenu2 }) => {
   return (
     <div className="navbar-submenu">
-      {items.map((item, index) => (
-        <a href="#" key={index}>{item}</a>
-      ))}
+      <div className="navbar-submenu bg-red-400">
+        {items.map((item, index) => (
+          <a className='' href="#" key={index}>{item}</a>
+        ))}
+      </div>
+      <div className="navbar-submenu bg-red-400">
+        {items.map((item, index) => (
+          <a className='' href="#" key={index}>{item}</a>
+        ))}
+      </div>
+    </div>
+  );
+}; */
+
+const NavbarSubMenu = ({ items, submenu2 }) => {
+  return (
+    <div className="navbar-submenu-container">
+      <div className="navbar-submenu bg-[#161616]">
+        {items.map((item, index) => (
+          <a className='' href="#" key={index}>{item}</a>
+        ))}
+      </div>
+      <div className="navbar-submenu bg-[#161616]">
+        {items.map((item, index) => (
+          <a className='' href="#" key={index}>{item}</a>
+        ))}
+      </div>
+      <div className="navbar-submenu bg-[#161616]">
+        {items.map((item, index) => (
+          <a className='' href="#" key={index}>{item}</a>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default NavbarSubMenu;
+
