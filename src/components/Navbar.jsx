@@ -72,7 +72,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="navbar-icons flex space-x-4 ml-4">
+          <div className="navbar-icons flex space-x-8 ml-4">
             {/* Insert SVGs */}
             <svg
             className="text-[#cccccc] fill-current"

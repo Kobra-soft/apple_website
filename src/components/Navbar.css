@@ -46,12 +46,12 @@
 
 .submenu-container {
   position: absolute;
-  top: 100%;
   width: 100%;
-  /* background-color: #52b401; */  /* FOR TESTING */
+  background-color: #161616;  /* FOR TESTING */
   left: 0;
   display: none;
-  padding-bottom: 40px;
+  top: 91%;
+  padding-bottom: 34px;
 }
 
 .navbar-container:hover .submenu-container {
@@ -79,34 +79,63 @@
   src: url('/assets/fonts/SF-Pro-Text-Regular.otf');
 }
 
+.nabar-titles0-2{
+  font-size: smaller;
+  color: #78787D;
+  padding-bottom: 0.65rem;
+}
+
 .navbar-submenu {
   position: relative;
   height: auto;
-  /* background-color: #161616; */
+  background-color: #161616;
   /* background-color: #fffb00; */ /* FOR TESTING */
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  /* top: -0.9rem; */
   bottom:0.9rem;
   font-weight: 400;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 1.45rem;
   color: #E8E8ED;
   line-height: 1.68;
+  
+}
+
+.navbar-submenu2-3 {
+  position: relative;
+  height: auto;
+  background-color: #161616;
+  /* background-color: #fffb00; */ /* FOR TESTING */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  /* changed this to push up!!! the text */
+  /* bottom:0.45rem; */
+bottom:0.9rem;
+
+  font-weight: 400;
+  font-family: 'SF Pro Text', sans-serif;
+  font-size: 1.45rem;
+  color: #E8E8ED;
+  line-height: 1.68;
+  
 }
 
 
 /* For nabarSubMenu.jsx */
 .navbar-submenu-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+
+
 }
 
 /* For nabarSubMenu.jsx */
 .navbar-submenu {
-  width: 35%;
-  /* Adjust as needed */
+  width: auto;
+  /* background-color: violet; */ /* FOR TESTING */
 }
 
 
