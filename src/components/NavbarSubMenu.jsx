@@ -16,43 +16,6 @@ export default NavbarSubMenu; */
 
 import React from "react";
 
-/* const NavbarSubMenu = ({ items }) => {
-  return (
-    <div className="navbar-submenu bg-red-400">
-      {items.map((item, index) => (
-        <a className='' href="#" key={index}>{item}</a>
-      ))}
-    </div>
-  );
-}; */
-
-/* const NavbarSubMenu = ({ items }) => {
-  return (
-    <div className="navbar-submenu bg-red-400">
-      {items.map((item, index) => (
-        <a className='' href="#" key={index}>{item}</a>
-      ))}
-    </div>
-  );
-}; */
-
-/* const NavbarSubMenu = ({ items, submenu2 }) => {
-  return (
-    <div className="navbar-submenu">
-      <div className="navbar-submenu bg-red-400">
-        {items.map((item, index) => (
-          <a className='' href="#" key={index}>{item}</a>
-        ))}
-      </div>
-      <div className="navbar-submenu bg-red-400">
-        {items.map((item, index) => (
-          <a className='' href="#" key={index}>{item}</a>
-        ))}
-      </div>
-    </div>
-  );
-}; */
-
 const NavbarSubMenu = ({ items, submenu2 }) => {
   return (
     <div
