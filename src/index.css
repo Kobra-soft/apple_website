@@ -29,6 +29,39 @@ canvas {
   max-width: 1120px;
 }
 
+@font-face {
+  font-family: 'SF Pro Text UT';
+  src: url('/assets/fonts/SF-Pro-Text-Ultralight.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Text Thin';
+  src: url('/assets/fonts/SF-Pro-Text-Thin.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Text Light';
+  src: url('/assets/fonts/SF-Pro-Text-Light.otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/assets/fonts/SF-Pro-Text-Regular.otf');
+}
+
+.footer{
+  color: #979798;
+  padding: 40px 0;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 12px;
+  font-weight: 100;
+
+  width: 85%;
+  margin-left: 62px;
+
+}
+
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center

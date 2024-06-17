@@ -5,20 +5,23 @@ import Highlights from "./components/Highlights";
 import Model from "./components/Model";
 import Footer from "./components/Footer";
 import * as Sentry from "@sentry/react";
+import Features from "./components/Features";
 
 const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
       {/* Moved Navbar2 advert component too inside the Navbar.jsx code */}
-      {/* <Navbar2 /> */}
+      
+      {/* <Navbar2 /> DELETE AFTER TESTING */}
       <Hero />
       <Highlights />
       <Model />
+      <Features />
       <Footer />
 
-      {/* <Features />
-      <HowItWorks /> */}
+      {/* <Features /> */}
+      {/* <HowItWorks /> */}
     </main>
   );
 };
