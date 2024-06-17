@@ -3,7 +3,7 @@ import { bagImg, searchImg } from "../utils";
 import { navLists } from "../constants";
 import "./Navbar.css";
 import NavbarSubMenu from "./NavbarSubMenu";
-import Navbar2 from "./Navbar2"; // Import Navbar2
+import Navbar2 from "./Navbar2";
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);

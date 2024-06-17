@@ -102,20 +102,6 @@ export const footerLinks = [
   "Support",
 ]; */
 
-/* export const navLists = [
-  { name: "Store", submenu: ["Shop the Latest", "Mac", "iPad", "iPhone", "Apple Watch", "Accessories"] },
-  { name: "Mac", submenu: ["Explore All Mac", "MacBook Air", "MacBook Pro", "iMac", "Mac mini", "Mac Studio", "Mac Pro", "Displays" ] },
-  { name: "iPad", submenu: ["Explore All iPad", "iPad Pro", "iPad Air", "iPad", "iPad mini", "Apple Pencil", "Keyboards"] },
-  { name: "iPhone", submenu: ["Explore All iPhone", "iPhone 15 Pro", "iPhone 15", "iPhone 14", "iPhone 13", "iPhone SE"] },
-  { name: "Watch", submenu: ["Explore All Apple Watch", "Apple Watch Series 9", "Apple Watch Ultra 2", "Apple Watch SE", "Apple Watch Nike", "Apple Watch Hermès"] },
-  { name: "Vision", submenu: ["Explore All Apple Vision Pro"] },
-  { name: "AirPods", submenu: ["Explore All AirPods", "AirPods Pro (2nd generation)", "AirPods (2nd generation)", "AirPods (3rd generation)", "AirPods Max",] },
-  { name: "TV & Home", submenu: ["Explore TV & Home", "Apple TV 4K", "HomePod", "HomePod mini",] },
-  { name: "Entertainment", submenu: ["Explore Entertainment", "Apple One", "Apple TV+", "Apple Music", "Apple Arcade", "Apple Fitness+", "Apple News+", "Apple Podcasts", "Apple Books", "App Store"] },
-  { name: "Accessories", submenu: ["Shop All Accessories", "Mac", "iPad", "iPhone", "Apple Watch", "Apple Vision Pro", "AirPods", "TV & Home"] },
-  { name: "Support", submenu: ["iPhone", "Mac", "iPad", "Watch", "AirPods", "Music", "TV"] },
-]; */
-
 // 1-11
 export const navLists = [
   {
@@ -260,7 +246,7 @@ export const navLists = [
     name: "Vision",
     title: "Explore Vision",
     title2: "Shop Vision",
-    title3: "NULL!!!",
+    title3: "NULL",
     submenu: ["Explore Apple Vision Pro"],
     submenu2: ["Shop Apple Vision Pro", "Apple Vision Pro Accessories"],
     submenu3: ["NULL!!!"],
@@ -315,7 +301,7 @@ export const navLists = [
     name: "Entertainment",
     title: "Explore Entertainment",
     title2: "Support",
-    title3: "NULL!!!",
+    title3: "NULL",
     submenu: [
       "Explore Entertainment",
       "Apple One",
@@ -329,7 +315,7 @@ export const navLists = [
       "App Store",
     ],
     submenu2: ["Apple TV+ Support", "Apple Music Support"],
-    submenu3: ["NULL!!!"],
+    submenu3: ["NULL"],
   },
 
   {
@@ -349,7 +335,7 @@ export const navLists = [
       "TV & Home",
     ],
     submenu2: ["Made by Apple", "Beats by Dr. Dre", "AirTag"],
-    submenu3: ["NULL!!!"],
+    submenu3: ["NULL"],
   },
 
   {

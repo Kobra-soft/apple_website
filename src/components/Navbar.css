@@ -11,13 +11,6 @@
   align-items: center;
 }
 
-/* SVGS */
-.navbar-logo {
-}
-/* SVGS */
-.navbar-icons {
-}
-
 .navbar-container:hover {
   background-color: #161616;
 }
@@ -25,7 +18,8 @@
 .navbar-item {
   position: relative;
   padding: 13px 0px;
-  /* background-color: #ff2a2a; */ /* FOR TESTING */
+  /* background-color: #ff2a2a; */
+  /* FOR TESTING */
   font-family: 'SF Pro Text Light', sans-serif;
   font-size: 11.666px;
   color: #cccccc;
@@ -47,7 +41,8 @@
 .submenu-container {
   position: absolute;
   width: 100%;
-  background-color: #161616;  /* FOR TESTING */
+  background-color: #161616;
+  /* FOR TESTING */
   left: 0;
   display: none;
   top: 91%;
@@ -56,7 +51,7 @@
 
 .navbar-container:hover .submenu-container {
   display: block;
-  /* Show when navbar is hovered */ 
+  /* Show when navbar is hovered */
 }
 
 @font-face {
@@ -79,7 +74,7 @@
   src: url('/assets/fonts/SF-Pro-Text-Regular.otf');
 }
 
-.nabar-titles0-2{
+.nabar-titles0-2 {
   font-size: smaller;
   color: #78787D;
   padding-bottom: 0.65rem;
@@ -89,38 +84,40 @@
   position: relative;
   height: auto;
   background-color: #161616;
-  /* background-color: #fffb00; */ /* FOR TESTING */
+  /* background-color: #fffb00; */
+  /* FOR TESTING */
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  bottom:0.9rem;
+  bottom: 0.9rem;
   font-weight: 400;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 1.45rem;
   color: #E8E8ED;
   line-height: 1.68;
-  
+
 }
 
 .navbar-submenu2-3 {
   position: relative;
   height: auto;
   background-color: #161616;
-  /* background-color: #fffb00; */ /* FOR TESTING */
+  /* background-color: #fffb00; */
+  /* FOR TESTING */
   display: flex;
   flex-direction: column;
   cursor: pointer;
 
   /* changed this to push up!!! the text */
   /* bottom:0.45rem; */
-bottom:0.9rem;
+  bottom: 0.9rem;
 
   font-weight: 400;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 1.45rem;
   color: #E8E8ED;
   line-height: 1.68;
-  
+
 }
 
 
@@ -135,7 +132,8 @@ bottom:0.9rem;
 /* For nabarSubMenu.jsx */
 .navbar-submenu {
   width: auto;
-  /* background-color: violet; */ /* FOR TESTING */
+  /* background-color: violet; */
+  /* FOR TESTING */
 }
 
 
