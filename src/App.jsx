@@ -6,22 +6,20 @@ import Model from "./components/Model";
 import Footer from "./components/Footer";
 import * as Sentry from "@sentry/react";
 import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
 
 const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
       {/* Moved Navbar2 advert component too inside the Navbar.jsx code */}
-      
       {/* <Navbar2 /> DELETE AFTER TESTING */}
       <Hero />
       <Highlights />
       <Model />
       <Features />
+      <HowItWorks />
       <Footer />
-
-      {/* <Features /> */}
-      {/* <HowItWorks /> */}
     </main>
   );
 };
