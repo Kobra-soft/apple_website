@@ -155,4 +155,8 @@ canvas {
     @apply opacity-0 translate-y-[100px]
   }
 
+  .link_underlined {
+    @apply text-white underline hover:underline cursor-pointer
+  }
+
 }
