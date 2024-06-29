@@ -49,7 +49,7 @@ canvas {
   src: url('/assets/fonts/SF-Pro-Text-Regular.otf');
 }
 
-.footer{
+.footer {
   color: #979798;
   text-align: left;
   /* line-height: 1.4; */
@@ -157,6 +157,10 @@ canvas {
 
   .link_underlined {
     @apply text-white underline hover:underline cursor-pointer
+  }
+
+  .link_underlined2 {
+    @apply text-blue underline hover:underline cursor-pointer
   }
 
 }

@@ -1,8 +1,14 @@
 .navbar-container {
+
+  /* ////////////////////////////////
+  debug here and use tailwindcss instead for different devices sizes!! s, m, lg, xl
+   */
+
   /* position: relative;
   display: flex;
   flex-direction: column;
   align-items: center; */
+  
   background-color: rgb(0, 0, 0);
 }
 
@@ -18,15 +24,13 @@
 .navbar-item {
   position: relative;
   padding: 13px 0px;
-  /* background-color: #ff2a2a; */
-  /* FOR TESTING */
+  /* background-color: #ff2a2a; */ /* FOR TESTING */
   font-family: 'SF Pro Text Light', sans-serif;
   font-size: 11.666px;
   color: #cccccc;
   font-style: normal;
   font-weight: 100;
   letter-spacing: +0.03em;
-  /* line-height: 1.4705882353; */
   margin-left: 18px;
   margin-right: 18px;
   cursor: pointer;
@@ -41,8 +45,7 @@
 .submenu-container {
   position: absolute;
   width: 100%;
-  background-color: #161616;
-  /* FOR TESTING */
+  background-color: #161616; /* FOR TESTING */
   left: 0;
   display: none;
   top: 91%;
@@ -51,7 +54,6 @@
 
 .navbar-container:hover .submenu-container {
   display: block;
-  /* Show when navbar is hovered */
 }
 
 @font-face {
@@ -102,8 +104,7 @@
   position: relative;
   height: auto;
   background-color: #161616;
-  /* background-color: #fffb00; */
-  /* FOR TESTING */
+  /* background-color: #fffb00; */ /* FOR TESTING */
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -117,7 +118,6 @@
   font-size: 1.45rem;
   color: #E8E8ED;
   line-height: 1.68;
-
 }
 
 
@@ -125,18 +125,13 @@
 .navbar-submenu-container {
   display: flex;
   /* justify-content: space-between; */
-
-
 }
 
 /* For nabarSubMenu.jsx */
 .navbar-submenu {
   width: auto;
-  /* background-color: violet; */
-  /* FOR TESTING */
+  /* background-color: violet; */ /* FOR TESTING */
 }
-
-
 
 .navbar-submenu a:hover {
   color: #ffffff;

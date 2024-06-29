@@ -48,15 +48,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div
-        id="cta"
-        className="flex flex-col items-center opacity-0 mt-32"
-      >
+      <div id="cta" className="flex flex-col items-center opacity-0 mt-32">
         <a href="#highlights" className="btn">
           Buy
         </a>
         {/* <p className="font-normal text-xl">From $199/month or $999</p> */}
-        <p className="font-normal text-[21px] mt-2 tracking-wide">From £41.62/mo. or £999</p>
+        <p className="font-normal text-[21px] mt-2 tracking-wide">
+          From £41.62/mo. or £999
+        </p>
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import Navbar2 from "./Navbar2";
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false); // New state
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const firstNavItemRef = useRef(null);
   const [hoveredItem, setHoveredItem] = useState(null);
 
