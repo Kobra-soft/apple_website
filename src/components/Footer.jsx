@@ -228,7 +228,7 @@ const Footer = () => {
           Footer Links Section TO GO HERE 
           ///////////////////////////////////////// */}
 
-          <p className="font-extralight text-[#909091] text-[11.666px]">
+          <p className="font-extralight footer text-[#909091] text-[11.666px]">
             More ways to shop:
             {" "}
             <a
@@ -265,7 +265,8 @@ const Footer = () => {
               Copyright &copy; 2024 Apple Inc. All rights reserved.
             </p>
           </div>
-          <div className="flex flex-wrap">
+
+          <div className="flex flex-wrap pr-10 sm:pr-0 md:pr-0 lg:pr-0">
             {footerLinks.map((link, i) => (
               <p
                 key={link}
