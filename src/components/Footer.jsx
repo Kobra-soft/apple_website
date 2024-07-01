@@ -4,7 +4,7 @@ import { navSubLinks_Search } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className="py-5 sm:px-10 px-4 bg-[#1d1d1f]">
+    <footer className="py-5 sm:px-10 pl-4 bg-[#1d1d1f]">
       <div className="screen-max-width">
         <div>
           <p className="footer cursor-text mb-4 mt-4 sm:mt-0">
