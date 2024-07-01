@@ -64,7 +64,7 @@ canvas {
 /* Mobile spacing for <br> tags */
 @media (max-width: 640px) { /* Adjust this breakpoint as needed */
   .mobile-spacing {
-    margin-bottom: 2rem; /* Increase space on mobile */
+    padding-bottom: 1rem; /* Increase space on mobile */
     background-color: aqua;
   }
 }
