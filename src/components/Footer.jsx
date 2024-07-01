@@ -18,7 +18,7 @@ const Footer = () => {
             311753). Registered in England. Registered No: 2901725. Registered
             office: 1 Churchill Place, London, E14 5HP. Subject to application
             and status. Full terms apply.
-            <br className="mb-3" />
+            <br className="mb-3 mobile-spacing" />
             Barclays Partner Finance Eligibility Criteria apply. On the date of
             your application, you must be aged 18 or over, have lived
             permanently in the UK for the last three years (i.e. provide three
@@ -39,7 +39,7 @@ const Footer = () => {
             previous or existing commitments, and any county court judgments.
             Subject to application, financial circumstances and borrowing
             history.
-            <br className="mb-3" />
+            <br className="mb-3 mobile-spacing" />
             Customers who are approved for finance will pay 0% (APR variable)
             for 24 months on a minimum order value of £99 including VAT. Maximum
             order value is £50,000 including VAT. To receive consumer finance on
@@ -50,7 +50,7 @@ const Footer = () => {
             interest 0% p.a. Representative APR 0%. Total amount of credit
             £1,200 paid over 24 months as 24 monthly payments of £50 at 0% p.a.
             Total amount payable £1,200.
-            <br className="mb-3" />* Trade-in values will vary based on the
+            <br className="mb-3 mobile-spacing" />* Trade-in values will vary based on the
             condition, year and configuration of your eligible trade-in device.
             Not all devices are eligible for credit. You must be at least 18
             years old to be eligible to trade in for credit or for an Apple Gift
@@ -73,13 +73,13 @@ const Footer = () => {
             </a>{" "}
             for trade-in and recycling of eligible devices. Restrictions and
             limitations may apply.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             1. Display size: The display has rounded corners that follow a
             beautiful curved design, and these corners are within a standard
             rectangle. When measured as a standard rectangular shape, the screen
             is 6.12 inches (iPhone 15 Pro) or 6.69 inches (iPhone 15 Pro Max)
             diagonally. Actual viewable area is less.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             2. iPhone 15 Pro and iPhone 15 Pro Max are splash, water and dust
             resistant and were tested under controlled laboratory conditions
             with a rating of IP68 under IEC standard 60529 (maximum depth of 6
@@ -88,27 +88,27 @@ const Footer = () => {
             normal wear. Do not attempt to charge a wet iPhone; refer to the
             user guide for cleaning and drying instructions. Liquid damage not
             covered under warranty.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             3. Stand sold separately.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             4. Apple Vision Pro available early next year in the United States.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             5. USB 3 cable with 10Gb/s speed required.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             6. Wi‑Fi 6E available in countries and regions where supported.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             7. Ultra Wideband availability varies by region.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             8. The included USB‑C Charge Cable is compatible with AirPods Pro
             (2nd generation) with MagSafe Charging Case (USB‑C).
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             9. Testing conducted by Apple in August 2023 using pre‑production
             iPhone 15, iPhone 15 Plus, iPhone 15 Pro and iPhone 15 Pro Max units
             and software and accessory Apple USB‑C Power Adapter (20W Model
             A2305). Fast-charge testing conducted with drained iPhone units.
             Charge time varies with settings and environmental factors; actual
             results will vary.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             10. Use of eSIM requires a wireless service plan (which may include
             restrictions on switching service providers and roaming, even after
             contract expires). Not all providers support eSIM. Use of eSIM in
@@ -121,7 +121,7 @@ const Footer = () => {
             >
               support.apple.com/en-gb/HT212780.
             </a>
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             11. Data plan required. 5G is available in selected markets and
             through selected network providers. Speeds vary based on site
             conditions and network. For details on 5G support, contact your
@@ -132,7 +132,7 @@ const Footer = () => {
             >
               apple.com/uk/iphone/cellular.
             </a>
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             12. All battery claims depend on network configuration and many
             other factors; actual results will vary. Battery has limited
             recharge cycles and may eventually need to be replaced. Battery life
@@ -151,9 +151,9 @@ const Footer = () => {
               apple.com/uk/iphone/battery.html
             </a>{" "}
             for more information.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             13. Accessories sold separately.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             14. Service is included free for two years with the activation of
             any iPhone 15 model. Connection and response times vary based on
             location, site conditions and other factors.{" "}
@@ -165,23 +165,23 @@ const Footer = () => {
               support.apple.com/en-gb/HT213885
             </a>{" "}
             for more information.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             15. iPhone 15 and iPhone 15 Pro can detect a serious car crash and
             call for help. Requires a mobile data connection or Wi‑Fi calling.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             16. On a mass balance allocation.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             17. Breakdown of US retail packaging by weight. Adhesives, inks and
             coatings are excluded from our calculations of plastic content and
             packaging weight.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             18. Responsible sourcing of wood fibre is defined in Apple’s
             Responsible Fibre Specification. We consider wood fibres to include
             bamboo.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             19. Personal Voice can be created using iPhone, iPad, and Mac with
             Apple silicon, and is available in English for all locales.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             20. Door Detection and Point and Speak can read signs and labels in
             Cantonese (Simplified, Traditional), Chinese (Simplified,
             Traditional), English (US), French (France), German (Germany),
@@ -190,10 +190,10 @@ const Footer = () => {
             (Ukraine). Detection Mode should not be relied on in circumstances
             where you may be harmed or injured, or in high-risk or emergency
             situations.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             21. Requires an iPhone and Apple Watch with second-generation Ultra
             Wideband chip. Ultra Wideband availability varies by region.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             22. Battery life claim refers to larger models. All battery claims
             depend on network configuration and many other factors; actual
             results will vary. Battery has limited recharge cycles and may
@@ -213,7 +213,7 @@ const Footer = () => {
               apple.com/uk/iphone/battery.html
             </a>{" "}
             for more information.
-            <br className="mb-2.5" />
+            <br className="mb-2.5 mobile-spacing" />
             Apps are available on the App Store. Title availability is subject
             to change.
             <br className="mb-2.5" />

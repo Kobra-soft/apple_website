@@ -61,6 +61,12 @@ canvas {
 
 }
 
+/* Mobile spacing for <br> tags */
+@media (max-width: 640px) { /* Adjust this breakpoint as needed */
+  .mobile-spacing {
+    margin-bottom: 1rem; /* Increase space on mobile */
+  }
+}
 
 @layer utilities {
   .flex-center {
