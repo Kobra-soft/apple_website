@@ -62,12 +62,12 @@ canvas {
 }
 
 /* Mobile spacing for <br> tags */
-@media (max-width: 640px) { /* Adjust this breakpoint as needed */
+/* @media (max-width: 640px) { 
   .mobile-spacing {
-    padding-bottom: 1rem; /* Increase space on mobile */
+    padding-bottom: 1rem; 
     background-color: aqua;
   }
-}
+} */
 
 @layer utilities {
   .flex-center {

@@ -213,7 +213,7 @@ const Footer = () => {
               apple.com/uk/iphone/battery.html
             </a>{" "}
             for more information.
-            <br className="mb-2.5 mobile-spacing" />
+            <br className="mb-2.5 sm:mt-0 mt-10 mobile-spacing" />
             Apps are available on the App Store. Title availability is subject
             to change.
             <br className="mb-2.5" />
