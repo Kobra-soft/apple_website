@@ -73,12 +73,16 @@ const Footer = () => {
             </a>{" "}
             for trade-in and recycling of eligible devices. Restrictions and
             limitations may apply.
-            <br className="mb-2.5 mobile-spacing" />
+            {/* <br className="mb-2.5 mobile-spacing" /> */}
+
+            <p className="bg-red-400 sm:mt-0 mt-10">
             1. Display size: The display has rounded corners that follow a
             beautiful curved design, and these corners are within a standard
             rectangle. When measured as a standard rectangular shape, the screen
             is 6.12 inches (iPhone 15 Pro) or 6.69 inches (iPhone 15 Pro Max)
             diagonally. Actual viewable area is less.
+            </p>
+
             <br className="mb-2.5 mobile-spacing" />
             2. iPhone 15 Pro and iPhone 15 Pro Max are splash, water and dust
             resistant and were tested under controlled laboratory conditions
