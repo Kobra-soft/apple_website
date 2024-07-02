@@ -12,7 +12,6 @@ const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
-      {/* Moved Navbar2 advert component too inside the Navbar.jsx code */}
       {/* <Navbar2 /> DELETE AFTER TESTING */}
       <Hero />
       <Highlights />

@@ -1,7 +1,5 @@
 .navbar-container {
-
-  /* ////////////////////////////////
-  debug here and use tailwindcss instead for different devices sizes!! s, m, lg, xl
+  /* debug here and use tailwindcss instead for different devices sizes!
    */
 
   /* position: relative;
@@ -24,7 +22,6 @@
 .navbar-item {
   position: relative;
   padding: 13px 0px;
-  /* background-color: #ff2a2a; */ /* FOR TESTING */
   font-family: 'SF Pro Text Light', sans-serif;
   font-size: 11.666px;
   color: #cccccc;
@@ -45,7 +42,7 @@
 .submenu-container {
   position: absolute;
   width: 100%;
-  background-color: #161616; /* FOR TESTING */
+  background-color: #161616; 
   left: 0;
   display: none;
   top: 91%;
@@ -86,8 +83,6 @@
   position: relative;
   height: auto;
   background-color: #161616;
-  /* background-color: #fffb00; */
-  /* FOR TESTING */
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -104,15 +99,10 @@
   position: relative;
   height: auto;
   background-color: #161616;
-  /* background-color: #fffb00; */ /* FOR TESTING */
   display: flex;
   flex-direction: column;
   cursor: pointer;
-
-  /* changed this to push up!!! the text */
-  /* bottom:0.45rem; */
   bottom: 0.9rem;
-
   font-weight: 400;
   font-family: 'SF Pro Text', sans-serif;
   font-size: 1.45rem;
@@ -130,7 +120,6 @@
 /* For nabarSubMenu.jsx */
 .navbar-submenu {
   width: auto;
-  /* background-color: violet; */ /* FOR TESTING */
 }
 
 .navbar-submenu a:hover {

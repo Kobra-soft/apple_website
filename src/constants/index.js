@@ -85,9 +85,6 @@ export const footerLinks = [
   "Site Map",
 ];
 
-///////////////////////////////////////////
-///////////////////////////////////////////
-
 /* export const navLists = [
   "Store",
   "Mac",

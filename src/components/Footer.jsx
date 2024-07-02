@@ -77,7 +77,6 @@ const Footer = () => {
             </a>{" "}
             for trade-in and recycling of eligible devices. Restrictions and
             limitations may apply.
-            {/* <br className="mb-2.5 mobile-spacing" /> */}
             </p>
 
             <p className=" mb-2.5">
@@ -250,7 +249,7 @@ const Footer = () => {
           </p>
 
           
-          {/* DIVIDER */}
+          {/* DIVIDER 1 */}
           <div className="bg-[#535355] mt-5 mb-5 h-[1px] w-[93%] md:w-full  sm:flex md:flex" />
 
           {/* ///////////////////////////////////// 
@@ -279,7 +278,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* DIVIDER */}
+        {/* DIVIDER 2 */}
         <div className="bg-[#535355] mt-5 mb-5 h-[1px] w-full hidden md:flex" />
 
         <div className="flex flex-wrap md:flex-nowrap md:items-center justify-between">
@@ -309,20 +308,6 @@ const Footer = () => {
               </p>
             ))}
           </div>
-          {/*           <div className="flex flex-wrap cursor-pointer">
-            {navSubLinks_Search.map((link, i) => (
-              <p
-                key={link}
-                className="font-normal text-[#c7c7c7] text-[11.666px]
-              leading-4 mt-1.5 sm:mt-0 hover:underline"
-              >
-                {link}{" "}
-                {i !== navSubLinks_Search.length - 1 && (
-                  <span className="mx-2 font-thin text-[#868686]"> | </span>
-                )}
-              </p>
-            ))}
-          </div> */}
           <div>
             <p
               className="font-extralight text-[#c7c7c7] text-[11.666px] mt-2 sm:mt-0
