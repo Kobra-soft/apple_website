@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="relative flex flex-col lg:items-center"
+      className="navbar-container sm:relative sm:flex sm:flex-col sm:items-center md:relative md:flex md:flex-col md:items-center"
       onMouseEnter={() => {
         setIsHovered(true);
         setIsSubmenuOpen(true);
@@ -36,11 +36,7 @@ const Navbar = () => {
         setIsSubmenuOpen(false);
       }}
     >
-      <header
-        className={`navbar flex justify-between ${
-          isHovered ? "navbar-hovered" : ""
-        }`}
-      >
+      <header className={`navbar ${isHovered ? "navbar-hovered" : ""}`}>
         <nav className="hidden md:flex justify-between items-center w-full">
           <div
             className="navbar-logo mr-4"
@@ -107,17 +103,17 @@ const Navbar = () => {
           </div>
         </nav>
 
-        {/* Mobile Navbar - HIDDEN Until === Mobile screen 
-        then the top nav is hidden and this one displays! */}
-        <nav className="flex md:hidden justify-between items-center w-full px-4">
+        <nav className="flex md:hidden justify-between items-center w-full">
           <div className="flex items-center justify-between w-full">
             {" "}
+            {/* Added flex, justify-between, and w-full to this div */}
             <div
               className="navbar-logo mr-4 flex"
               onMouseEnter={() => setIsLogoHovered(true)}
               onMouseLeave={() => setIsLogoHovered(false)}
               style={{ cursor: "pointer" }}
             >
+              {/* SVG for Apple logo */}
               <svg
                 className="text-[#cccccc] fill-current"
                 width="16"
@@ -132,62 +128,33 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            {/* 3 x SVG's icons RIGHT SIDE */}
-            <div className="flex space-x-0 ml-4 px-4">
-              <div className="flex justify-between space-x-8">
-                {/* SEARCH - SVG Icon */}
-                <svg
-                  className="width-15 height-44"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="44"
-                  viewBox="0 0 15 44"
-                  fill={isSearchHovered ? "#ffffff" : "#cccccc"}
-                  onMouseEnter={() => setIsSearchHovered(true)}
-                  onMouseLeave={() => setIsSearchHovered(false)}
-                  style={{ cursor: "pointer" }}
-                >
-                  <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
-                </svg>
-
-                {/* BAG - SVG Icon */}
-                <svg
-                  height="44"
-                  viewBox="0 0 15 44"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill={isBagHovered ? "#ffffff" : "#cccccc"}
-                  onMouseEnter={() => setIsBagHovered(true)}
-                  onMouseLeave={() => setIsBagHovered(false)}
-                  style={{ cursor: "pointer" }}
-                >
-                  <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path>
-                </svg>
-
-                {/* MENU - SVG Icon */}
-                <svg
-                  width="24"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  /* fill={isBagHovered ? "#ffffff" : "#cccccc"} */
-                  stroke={isBagHovered ? "#ffffff" : "#cccccc"}
-                  onMouseEnter={() => setIsBagHovered(true)}
-                  onMouseLeave={() => setIsBagHovered(false)}
-                  style={{ cursor: "pointer" }}
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="Menu / Menu_Duo_MD">
-                    <path
-                      id="Vector"
-                      d="M5 15H19M5 9H19"
-                      /* stroke="#000000" */
-                      /* stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" */
-                    />
-                  </g>
-                </svg>
-              </div>
+            <div className="navbar-icons flex space-x-8 ml-4 ">
+              {/* SVG for Search Icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="44px"
+                viewBox="0 0 15 44"
+                fill={isSearchHovered ? "#ffffff" : "#cccccc"}
+                onMouseEnter={() => setIsSearchHovered(true)}
+                onMouseLeave={() => setIsSearchHovered(false)}
+                style={{ cursor: "pointer" }}
+              >
+                <path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+              </svg>
+              {/* SVG for Bag Icon */}
+              <svg
+                height="44"
+                viewBox="0 0 14 44"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+                fill={isBagHovered ? "#ffffff" : "#cccccc"}
+                onMouseEnter={() => setIsBagHovered(true)}
+                onMouseLeave={() => setIsBagHovered(false)}
+                style={{ cursor: "pointer" }}
+              >
+                <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z"></path>
+              </svg>
             </div>
           </div>
         </nav>
