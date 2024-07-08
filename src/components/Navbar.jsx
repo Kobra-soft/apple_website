@@ -36,7 +36,6 @@ const Navbar = () => {
         setIsSubmenuOpen(false);
       }}
       onClick={() => {
-        // Toggle submenu visibility on click for mobile devices
         setIsHovered(!isHovered);
         setIsSubmenuOpen(!isSubmenuOpen);
       }}

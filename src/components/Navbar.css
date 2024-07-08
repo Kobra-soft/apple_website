@@ -94,7 +94,6 @@
   font-size: 1.45rem;
   color: #E8E8ED;
   line-height: 1.68;
-
 }
 
 .navbar-submenu2-3 {
@@ -112,6 +111,13 @@
   line-height: 1.68;
 }
 
+/* Override for dark mode to use light mode styles */
+@media (prefers-color-scheme: dark) {
+  .navbar-submenu, .navbar-submenu2-3 {
+    background-color: #161616; /* Same dark background as light mode */
+    color: #E8E8ED; /* Same light text as light mode */
+  }
+}
 
 /* For nabarSubMenu.jsx */
 .navbar-submenu-container {
