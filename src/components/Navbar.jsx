@@ -35,6 +35,11 @@ const Navbar = () => {
         setIsHovered(false);
         setIsSubmenuOpen(false);
       }}
+      onClick={() => {
+        // Toggle submenu visibility on click for mobile devices
+        setIsHovered(!isHovered);
+        setIsSubmenuOpen(!isSubmenuOpen);
+      }}
     >
       <header
         className={`navbar flex justify-between ${
