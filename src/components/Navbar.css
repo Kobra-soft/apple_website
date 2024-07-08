@@ -113,9 +113,9 @@
 
 /* Override for dark mode to use light mode styles */
 @media (prefers-color-scheme: dark) {
-  .navbar-submenu, .navbar-submenu2-3 {
-    background-color: #161616; /* Same dark background as light mode */
-    color: #E8E8ED; /* Same light text as light mode */
+  body .navbar-submenu, body .navbar-submenu2-3 {
+    background-color: #161616 !important; /* Ensuring override */
+    color: #E8E8ED !important; /* Ensuring override */
   }
 }
 
