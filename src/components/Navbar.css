@@ -111,13 +111,6 @@
   line-height: 1.68;
 }
 
-/* Override for dark mode to use light mode styles */
-@media (prefers-color-scheme: dark) {
-  body .navbar-submenu, body .navbar-submenu2-3 {
-    background-color: #161616 !important; /* Ensuring override */
-    color: #E8E8ED !important; /* Ensuring override */
-  }
-}
 
 /* For nabarSubMenu.jsx */
 .navbar-submenu-container {
@@ -136,4 +129,18 @@
 
 .navbar2-hidden {
   visibility: hidden;
+}
+
+/* // TESTING DELETE IF CACHE Refresh doesnt work? */
+
+/* media query to override styles in dark mode */
+@media (prefers-color-scheme: dark) {
+  .navbar-submenu, .navbar-submenu2-3 {
+    background-color: #161616 !important; /* Override background color */
+    color: #E8E8ED !important; /* Override text color */
+  }
+
+  .navbar-submenu a:hover, .navbar-submenu2-3 a:hover {
+    color: #ffffff !important; /* Ensure hover state is also overridden */
+  }
 }
