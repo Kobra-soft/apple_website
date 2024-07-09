@@ -47,19 +47,16 @@ const Navbar = () => {
         }`}
       >
         <nav className="flex md:flex justify-between items-center w-full">
-          <div
-            className="navbar-logo mr-4 hidden md:flex"
-            onMouseEnter={() => setIsLogoHovered(true)}
-            onMouseLeave={() => setIsLogoHovered(false)}
-            style={{ cursor: "pointer" }}
-          >
+          <div className="navbar-logo mr-4 hidden md:flex">
             {/* SVG for Apple logo */}
             <svg
               className="text-[#cccccc] fill-current"
               width="16"
               height="16"
               viewBox="0 0 14 18"
-              fill="none"
+              onMouseEnter={() => setIsLogoHovered(true)}
+              onMouseLeave={() => setIsLogoHovered(false)}
+              style={{ cursor: "pointer" }}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -119,7 +116,9 @@ const Navbar = () => {
               width="16"
               height="16"
               viewBox="0 0 14 18"
-              fill="none"
+              onMouseEnter={() => setIsLogoHovered(true)}
+              onMouseLeave={() => setIsLogoHovered(false)}
+              style={{ cursor: "pointer" }}
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -129,31 +128,24 @@ const Navbar = () => {
             </svg>
             {/* Menu Icon */}
             <svg
-              className="mr-4"
+              className="mr-0"
               width="24"
               height="44"
               viewBox="0 0 24 24"
-              /* fill={isBagHovered ? "#ffffff" : "#cccccc"} */
-              stroke={isBagHovered ? "#ffffff" : "#cccccc"}
-              onMouseEnter={() => setIsBagHovered(true)}
-              onMouseLeave={() => setIsBagHovered(false)}
+              stroke={isMenuIconHovered ? "#ffffff" : "#cccccc"}
+              onMouseEnter={() => setIsMenuIconHovered(true)}
+              onMouseLeave={() => setIsMenuIconHovered(false)}
               style={{ cursor: "pointer" }}
               xmlns="http://www.w3.org/2000/svg"
             >
               <g id="Menu / Menu_Duo_MD">
-                <path
-                  id="Vector"
-                  d="M5 15H19M5 9H19"
-                  /* stroke="#000000" */
-                  /* stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" */
-                />
+                <path id="Vector" d="M5 15H19M5 9H19" />
               </g>
             </svg>
           </div>
         </nav>
       </header>
+
       <div className="submenu-container">
         {isHovered && (
           <div className="navbar-submenu">
@@ -162,8 +154,6 @@ const Navbar = () => {
         )}
       </div>
       <Navbar2 isSubmenuOpen={isSubmenuOpen} />
-      {/* {""} */}
-      {/* Conditionally render Navbar2 */}
     </div>
   );
 };
