@@ -245,7 +245,7 @@ const Footer = () => {
           </p>
 
           {/* DIVIDER 1 */}
-          <div className="bg-[#535355] mt-0 mb-0 h-[1px] w-[93%] md:w-full  sm:flex md:flex" />
+          <div className="bg-[#535355] mt-5 mb-5 h-[1px] w-[93%] md:w-full  sm:flex md:flex" />
 
           {/* ///////////////////////////////////// 
           Footer Links Section TO GO HERE 
@@ -271,13 +271,12 @@ const Footer = () => {
         </div>
 
         {/* DIVIDER 2 */}
-        <div className="bg-[#535355] mt-0 mb-0 h-[1px] w-full hidden md:flex" />
+        <div className="bg-[#535355] mt-5 mb-5 h-[1px] w-full hidden md:flex" />
 
         <div className="flex flex-wrap md:flex-nowrap md:items-center justify-between">
           <div>
             <p
-              className="font-extralight text-[#c7c7c7] text-[11.666px] mb-0 mt-0 sm:mt-0
-            flex md:hidden"
+              className="font-extralight text-[#c7c7c7] text-[11.666px] mb-4 mt-4 sm:mt-0 flex md:hidden"
             >
               United Kingdom
             </p>
@@ -290,8 +289,7 @@ const Footer = () => {
             {footerLinks.map((link, i) => (
               <p
                 key={link}
-                className="font-normal text-[#c7c7c7] text-[11.666px]
-      leading-4 mt-1.5 sm:mt-0 hover:underline"
+                className="font-normal text-[#c7c7c7] text-[11.666px] leading-4 mt-1.5 sm:mt-0 hover:underline"
               >
                 {link}
                 {i !== footerLinks.length - 1 && (
@@ -303,8 +301,7 @@ const Footer = () => {
 
           <div>
             <p
-              className="font-extralight text-[#c7c7c7] text-[11.666px] mt-0 sm:mt-0
-            hidden md:flex"
+              className="font-extralight text-[#c7c7c7] text-[11.666px] mt-2 sm:mt-0 hidden md:flex"
             >
               United Kingdom
             </p>
