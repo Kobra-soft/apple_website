@@ -6,22 +6,22 @@ const footerLinksData = [
   {
     title: "Shop and Learn",
     links: [
+      "Store",
       "Mac",
       "iPad",
       "iPhone",
       "Watch",
-      "TV",
-      "Music",
+      "Vision",
       "AirPods",
-      "HomePod",
-      "iPod touch",
+      "TV & Home",
+      "AirTag",
       "Accessories",
       "Gift Cards",
     ],
   },
   {
     title: "Apple Wallet",
-    links: ["Wallet", "Apple Card", "Apple Pay", "Apple Cash"],
+    links: ["Wallet", "Apple Pay"],
   },
   {
     title: "Account",
@@ -66,15 +66,35 @@ const footerLinksData = [
   },
   {
     title: "For Healthcare",
-    links: ["Apple in Healthcare", "Health on Apple Watch", "Health Records on iPhone"],
+    links: [
+      "Apple in Healthcare",
+      "Health on Apple Watch",
+      "Health Records on iPhone",
+    ],
   },
   {
     title: "Apple Values",
-    links: ["Accessibility", "Education", "Environment", "Inclusion and Diversity", "Privacy", "Supplier Responsibility"],
+    links: [
+      "Accessibility",
+      "Education",
+      "Environment",
+      "Privacy",
+      "Supplier Chain",
+    ],
   },
   {
     title: "About Apple",
-    links: ["Newsroom", "Apple Leadership", "Career Opportunities", "Investors", "Ethics & Compliance", "Events", "Contact Apple"],
+    links: [
+      "Newsroom",
+      "Apple Leadership",
+      "Career Opportunities",
+      "Warranty",
+      "Investors",
+      "Ethics & Compliance",
+      "Events",
+      "European Job Creation",
+      "Contact Apple",
+    ],
   },
 ];
 
@@ -327,72 +347,97 @@ const Footer = () => {
           Footer Links Section TO GO HERE 
           ///////////////////////////////////////// */}
 
-      {/* Footer Links Section */}
-      {/* This div will be hidden on small screens and visible on larger screens */}
-      <div className="footer-links-section hidden md:grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
-        <div className="footer-column">
-          {footerLinksData.slice(0, 2).map((section, index) => (
-            <div key={index} className="mb-5">
-              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
-              {section.links.map((link, i) => (
-                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
-                  {link}
-                </p>
+          {/* Footer Links Section */}
+          {/* This div will be hidden on small screens and visible on larger screens */}
+          <div className="footer-links-section hidden md:grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
+            <div className="footer-column">
+              {footerLinksData.slice(0, 2).map((section, index) => (
+                <div key={index} className="mb-5">
+                  <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">
+                    {section.title}
+                  </h3>
+                  {section.links.map((link, i) => (
+                    <p
+                      key={i}
+                      className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 mb-0.5 hover:underline"
+                    >
+                      {link}
+                    </p>
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
-        </div>
-        <div className="footer-column">
-          {footerLinksData.slice(2, 4).map((section, index) => (
-            <div key={index} className="mb-5">
-              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
-              {section.links.map((link, i) => (
-                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
-                  {link}
-                </p>
+            <div className="footer-column">
+              {footerLinksData.slice(2, 4).map((section, index) => (
+                <div key={index} className="mb-5">
+                  <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">
+                    {section.title}
+                  </h3>
+                  {section.links.map((link, i) => (
+                    <p
+                      key={i}
+                      className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 mb-0.5 hover:underline"
+                    >
+                      {link}
+                    </p>
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
-        </div>
-        <div className="footer-column">
-          {footerLinksData.slice(4, 5).map((section, index) => (
-            <div key={index} className="mb-5">
-              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
-              {section.links.map((link, i) => (
-               <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
-                  {link}
-                </p>
+            <div className="footer-column">
+              {footerLinksData.slice(4, 5).map((section, index) => (
+                <div key={index} className="mb-5">
+                  <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">
+                    {section.title}
+                  </h3>
+                  {section.links.map((link, i) => (
+                    <p
+                      key={i}
+                      className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 mb-0.5 hover:underline"
+                    >
+                      {link}
+                    </p>
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
-        </div>
-        <div className="footer-column">
-          {footerLinksData.slice(5, 8).map((section, index) => (
-            <div key={index} className="mb-5">
-              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
-              {section.links.map((link, i) => (
-                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
-                  {link}
-                </p>
+            <div className="footer-column">
+              {footerLinksData.slice(5, 8).map((section, index) => (
+                <div key={index} className="mb-5">
+                  <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">
+                    {section.title}
+                  </h3>
+                  {section.links.map((link, i) => (
+                    <p
+                      key={i}
+                      className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 mb-0.5 hover:underline"
+                    >
+                      {link}
+                    </p>
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
-        </div>
-        <div className="footer-column">
-          {footerLinksData.slice(8, 10).map((section, index) => (
-            <div key={index} className="mb-5">
-              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
-              {section.links.map((link, i) => (
-                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
-                  {link}
-                </p>
+            <div className="footer-column">
+              {footerLinksData.slice(8, 10).map((section, index) => (
+                <div key={index} className="mb-5">
+                  <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">
+                    {section.title}
+                  </h3>
+                  {section.links.map((link, i) => (
+                    <p
+                      key={i}
+                      className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 mb-0.5 hover:underline"
+                    >
+                      {link}
+                    </p>
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
 
-          <p className="font-extralight footer text-[#909091] text-[11.666px] pt-8">
+          <p className="font-extralight footer text-[#909091] text-[11.666px] pt-2">
             More ways to shop:{" "}
             <a
               className="link_underlined2 font-extralight"
@@ -428,11 +473,11 @@ const Footer = () => {
             {footerLinks.map((link, i) => (
               <p
                 key={link}
-                className="font-normal text-[#c7c7c7] text-[11.666px] leading-4 mt-1.5 sm:mt-0 hover:underline"
+                className="font-light text-[#c7c7c7] text-[11.666px] tracking-wide leading-4 mt-1.5 sm:mt-0 hover:underline"
               >
                 {link}
                 {i !== footerLinks.length - 1 && (
-                  <span className="mx-2 font-thin text-[#868686]">| </span>
+                  <span className="mx-2 font-thin text-[#868686]">|</span>
                 )}
               </p>
             ))}
