@@ -85,6 +85,104 @@ export const footerLinks = [
   "Site Map",
 ];
 
+export const footerLinksData = [
+  {
+    title: "Shop and Learn",
+    links: [
+      "Store",
+      "Mac",
+      "iPad",
+      "iPhone",
+      "Watch",
+      "Vision",
+      "AirPods",
+      "TV & Home",
+      "AirTag",
+      "Accessories",
+      "Gift Cards",
+    ],
+  },
+  {
+    title: "Apple Wallet",
+    links: ["Wallet", "Apple Pay"],
+  },
+  {
+    title: "Account",
+    links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+  },
+  {
+    title: "Entertainment",
+    links: [
+      "Apple One",
+      "Apple TV+",
+      "Apple Music",
+      "Apple Arcade",
+      "Apple Fitness+",
+      "Apple News+",
+      "Apple Podcasts",
+      "Apple Books",
+      "App Store",
+    ],
+  },
+  {
+    title: "Apple Store",
+    links: [
+      "Find a Store",
+      "Genius Bar",
+      "Today at Apple",
+      "Group Reservations",
+      "Apple Summer Camp",
+      "Apple Store App",
+      "Certified Refurbished",
+      "Apple Trade In",
+      "Financing",
+      "Order Status",
+      "Shopping Help",
+    ],
+  },
+  {
+    title: "For Business",
+    links: ["Apple and Business", "Shop for Business"],
+  },
+  {
+    title: "For Education",
+    links: ["Apple and Education", "Shop for University"],
+  },
+  {
+    title: "For Healthcare",
+    links: [
+      "Apple in Healthcare",
+      "Mac in Healthcare",
+      "Health on Apple Watch",
+      "Health Records on iPhone and iPad",
+    ],
+  },
+  {
+    title: "Apple Values",
+    links: [
+      "Accessibility",
+      "Education",
+      "Environment",
+      "Privacy",
+      "Supplier Chain",
+    ],
+  },
+  {
+    title: "About Apple",
+    links: [
+      "Newsroom",
+      "Apple Leadership",
+      "Career Opportunities",
+      "Warranty",
+      "Investors",
+      "Ethics & Compliance",
+      "Events",
+      "European Job Creation",
+      "Contact Apple",
+    ],
+  },
+];
+
 /* export const navLists = [
   "Store",
   "Mac",

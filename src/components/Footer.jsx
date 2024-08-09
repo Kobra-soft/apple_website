@@ -1,102 +1,7 @@
 import React from "react";
 import { footerLinks } from "../constants";
+import { footerLinksData } from "../constants";
 import { navSubLinks_Search } from "../constants";
-
-const footerLinksData = [
-  {
-    title: "Shop and Learn",
-    links: [
-      "Store",
-      "Mac",
-      "iPad",
-      "iPhone",
-      "Watch",
-      "Vision",
-      "AirPods",
-      "TV & Home",
-      "AirTag",
-      "Accessories",
-      "Gift Cards",
-    ],
-  },
-  {
-    title: "Apple Wallet",
-    links: ["Wallet", "Apple Pay"],
-  },
-  {
-    title: "Account",
-    links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
-  },
-  {
-    title: "Entertainment",
-    links: [
-      "Apple One",
-      "Apple TV+",
-      "Apple Music",
-      "Apple Arcade",
-      "Apple Fitness+",
-      "Apple News+",
-      "Apple Podcasts",
-      "Apple Books",
-      "App Store",
-    ],
-  },
-  {
-    title: "Apple Store",
-    links: [
-      "Find a Store",
-      "Genius Bar",
-      "Today at Apple",
-      "Apple Camp",
-      "Apple Store App",
-      "Refurbished and Clearance",
-      "Financing",
-      "Apple Trade In",
-      "Order Status",
-      "Shopping Help",
-    ],
-  },
-  {
-    title: "For Business",
-    links: ["Apple and Business", "Shop for Business"],
-  },
-  {
-    title: "For Education",
-    links: ["Apple and Education", "Shop for University"],
-  },
-  {
-    title: "For Healthcare",
-    links: [
-      "Apple in Healthcare",
-      "Health on Apple Watch",
-      "Health Records on iPhone",
-    ],
-  },
-  {
-    title: "Apple Values",
-    links: [
-      "Accessibility",
-      "Education",
-      "Environment",
-      "Privacy",
-      "Supplier Chain",
-    ],
-  },
-  {
-    title: "About Apple",
-    links: [
-      "Newsroom",
-      "Apple Leadership",
-      "Career Opportunities",
-      "Warranty",
-      "Investors",
-      "Ethics & Compliance",
-      "Events",
-      "European Job Creation",
-      "Contact Apple",
-    ],
-  },
-];
 
 const Footer = () => {
   return (
@@ -342,10 +247,6 @@ const Footer = () => {
 
           {/* DIVIDER 1 */}
           <div className="bg-[#535355] mt-5 mb-5 h-[1px] w-[93%] md:w-full  sm:flex md:flex" />
-
-          {/* ///////////////////////////////////// 
-          Footer Links Section TO GO HERE 
-          ///////////////////////////////////////// */}
 
           {/* Footer Links Section */}
           {/* This div will be hidden on small screens and visible on larger screens */}
