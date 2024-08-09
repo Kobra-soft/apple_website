@@ -2,6 +2,82 @@ import React from "react";
 import { footerLinks } from "../constants";
 import { navSubLinks_Search } from "../constants";
 
+const footerLinksData = [
+  {
+    title: "Shop and Learn",
+    links: [
+      "Mac",
+      "iPad",
+      "iPhone",
+      "Watch",
+      "TV",
+      "Music",
+      "AirPods",
+      "HomePod",
+      "iPod touch",
+      "Accessories",
+      "Gift Cards",
+    ],
+  },
+  {
+    title: "Apple Wallet",
+    links: ["Wallet", "Apple Card", "Apple Pay", "Apple Cash"],
+  },
+  {
+    title: "Account",
+    links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+  },
+  {
+    title: "Entertainment",
+    links: [
+      "Apple One",
+      "Apple TV+",
+      "Apple Music",
+      "Apple Arcade",
+      "Apple Fitness+",
+      "Apple News+",
+      "Apple Podcasts",
+      "Apple Books",
+      "App Store",
+    ],
+  },
+  {
+    title: "Apple Store",
+    links: [
+      "Find a Store",
+      "Genius Bar",
+      "Today at Apple",
+      "Apple Camp",
+      "Apple Store App",
+      "Refurbished and Clearance",
+      "Financing",
+      "Apple Trade In",
+      "Order Status",
+      "Shopping Help",
+    ],
+  },
+  {
+    title: "For Business",
+    links: ["Apple and Business", "Shop for Business"],
+  },
+  {
+    title: "For Education",
+    links: ["Apple and Education", "Shop for University"],
+  },
+  {
+    title: "For Healthcare",
+    links: ["Apple in Healthcare", "Health on Apple Watch", "Health Records on iPhone"],
+  },
+  {
+    title: "Apple Values",
+    links: ["Accessibility", "Education", "Environment", "Inclusion and Diversity", "Privacy", "Supplier Responsibility"],
+  },
+  {
+    title: "About Apple",
+    links: ["Newsroom", "Apple Leadership", "Career Opportunities", "Investors", "Ethics & Compliance", "Events", "Contact Apple"],
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="py-5 sm:px-10 pl-4 bg-[#1d1d1f]">
@@ -251,10 +327,75 @@ const Footer = () => {
           Footer Links Section TO GO HERE 
           ///////////////////////////////////////// */}
 
-          <p className="font-extralight footer text-[#909091] text-[11.666px]">
+      {/* Footer Links Section */}
+      {/* This div will be hidden on small screens and visible on larger screens */}
+      <div className="footer-links-section hidden md:grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
+        <div className="footer-column">
+          {footerLinksData.slice(0, 2).map((section, index) => (
+            <div key={index} className="mb-5">
+              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
+              {section.links.map((link, i) => (
+                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
+                  {link}
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="footer-column">
+          {footerLinksData.slice(2, 4).map((section, index) => (
+            <div key={index} className="mb-5">
+              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
+              {section.links.map((link, i) => (
+                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
+                  {link}
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="footer-column">
+          {footerLinksData.slice(4, 5).map((section, index) => (
+            <div key={index} className="mb-5">
+              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
+              {section.links.map((link, i) => (
+               <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
+                  {link}
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="footer-column">
+          {footerLinksData.slice(5, 8).map((section, index) => (
+            <div key={index} className="mb-5">
+              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
+              {section.links.map((link, i) => (
+                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
+                  {link}
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="footer-column">
+          {footerLinksData.slice(8, 10).map((section, index) => (
+            <div key={index} className="mb-5">
+              <h3 className="font-normal text-[#EDEDED] text-[11.666px] tracking-wide mb-1.5">{section.title}</h3>
+              {section.links.map((link, i) => (
+                <p key={i} className="font-light text-[#BFBFC0] text-[11.666px] tracking-wide leading-6 hover:underline">
+                  {link}
+                </p>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+          <p className="font-extralight footer text-[#909091] text-[11.666px] pt-8">
             More ways to shop:{" "}
             <a
-              className="link_underlined2"
+              className="link_underlined2 font-extralight"
               href="https://www.apple.com/uk/retail/"
             >
               find an Apple Store
@@ -275,9 +416,7 @@ const Footer = () => {
 
         <div className="flex flex-wrap md:flex-nowrap md:items-center justify-between">
           <div>
-            <p
-              className="font-extralight text-[#c7c7c7] text-[11.666px] mb-4 mt-4 sm:mt-0 flex md:hidden"
-            >
+            <p className="font-extralight text-[#c7c7c7] text-[11.666px] mb-4 mt-4 sm:mt-0 flex md:hidden">
               United Kingdom
             </p>
             <p className="font-extralight text-[#909091] text-[11.666px]">
@@ -300,9 +439,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p
-              className="font-extralight text-[#c7c7c7] text-[11.666px] mt-2 sm:mt-0 hidden md:flex"
-            >
+            <p className="font-extralight text-[#c7c7c7] text-[11.666px] mt-2 sm:mt-0 hidden md:flex">
               United Kingdom
             </p>
           </div>
