@@ -12,7 +12,8 @@ const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
-      {/* <Navbar2 /> DELETE AFTER TESTING */}
+      {/* DELETE AFTER TESTING */}
+      <Navbar2 /> 
       <Hero />
       <Highlights />
       <Model />

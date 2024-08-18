@@ -12,6 +12,8 @@ export default {
           300: "#42424570",
         },
         zinc: "#101010",
+        customBlack: "#161616",
+        customRed: "#000000",
       },
       fontFamily: {
         "sf-pro-ut": ["SF Pro Text UT", "sans-serif"],

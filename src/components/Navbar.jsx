@@ -146,14 +146,16 @@ const Navbar = () => {
         </nav>
       </header>
 
-      <div className="submenu-container">
+      <div className="submenu-container mt-2">
         {isHovered && (
           <div className="navbar-submenu">
             <NavbarSubMenu items={hoveredItem ? hoveredItem.submenu : []} />
           </div>
         )}
       </div>
-      <Navbar2 isSubmenuOpen={isSubmenuOpen} />
+      {/* <Navbar2 isSubmenuOpen={isSubmenuOpen} className="pointer-events-none overflow-hidden" /> */}
+      {/* <Navbar2 isSubmenuOpen={isSubmenuOpen} /> */}
+      {/* <div className="w-full p-2 bg-red-400"></div> */}
     </div>
   );
 };
